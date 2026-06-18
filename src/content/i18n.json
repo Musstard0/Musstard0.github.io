@@ -1,0 +1,958 @@
+{
+  "en": {
+    "nav": {
+      "about": "About",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact",
+      "switchToVoice": "Voice Actor",
+      "switchToGame": "Game Dev"
+    },
+    "hero": {
+      "game": {
+        "greeting": "Hello, I'm",
+        "name": "Denis Rusin",
+        "role": "Game Developer",
+        "tagline": "Crafting immersive worlds, one pixel at a time.",
+        "sub": "I build games that pull players in and don't let go — from rapid prototypes to full commercial releases.",
+        "cta": "View My Games",
+        "ctaSub": "Or explore my voice work →"
+      },
+      "voice": {
+        "greeting": "Hello, I'm",
+        "name": "Denis Rusin",
+        "role": "Voice Actor",
+        "tagline": "Giving breath and soul to every character.",
+        "sub": "From fierce villains to gentle narrators, I deliver performances that linger long after the last line.",
+        "cta": "Hear My Reel",
+        "ctaSub": "Or explore my game dev work →"
+      }
+    },
+    "about": {
+      "heading": "About Me",
+      "game": {
+        "p1": "I'm a game developer with 7 years of professional experience shipping titles across PC, console, and mobile. My expertise spans systems design, gameplay programming, and real-time rendering.",
+        "p2": "I've worked on everything from solo indie experiments to 15-person studio productions. I love the moment a mechanic clicks — when play becomes feel.",
+        "p3": "Currently open to new collaborations, freelance contracts, and full-time roles.",
+        "tag1": "Systems Design",
+        "tag2": "Gameplay Programming",
+        "tag3": "Shader / VFX",
+        "tag4": "Solo & Team"
+      },
+      "voice": {
+        "p1": "I'm a professional voice actor with a four-octave range and a background in theatre and audio production. I've voiced characters for video games, animated series, audiobooks, and commercial campaigns.",
+        "p2": "My home studio is fully treated and equipped for remote sessions. I deliver broadcast-quality audio quickly and take direction with precision.",
+        "p3": "Available for character work, narration, e-learning, and commercial VO.",
+        "tag1": "Character Range",
+        "tag2": "Home Studio",
+        "tag3": "Fast Turnaround",
+        "tag4": "Remote Sessions"
+      }
+    },
+    "projects": {
+      "heading": "Projects",
+      "game": [
+        {
+          "title": "Neon Abyss 2",
+          "desc": "A roguelite platformer set in a neon-soaked underworld. 200k+ copies sold on Steam. Systems design, gameplay programming, and custom shader work.",
+          "tags": [
+            "Unity",
+            "C#",
+            "HLSL",
+            "Steam"
+          ],
+          "year": "2024",
+          "type": "Commercial Release"
+        },
+        {
+          "title": "Siege Protocol",
+          "desc": "Real-time multiplayer strategy with destructible environments. Built entirely in Unreal Engine 5. Networked using dedicated servers with rollback netcode.",
+          "tags": [
+            "Unreal Engine 5",
+            "C++",
+            "Multiplayer",
+            "EOS"
+          ],
+          "year": "2023",
+          "type": "Studio Project"
+        },
+        {
+          "title": "Chromaveil",
+          "desc": "A narrative puzzle game exploring grief through color mechanics. 48-hour jam winner, later expanded to a full release. Solo dev.",
+          "tags": [
+            "Godot",
+            "GDScript",
+            "Solo Dev",
+            "Narrative"
+          ],
+          "year": "2022",
+          "type": "Indie Release"
+        },
+        {
+          "title": "Voidstep Engine",
+          "desc": "A custom 2D game engine written in C++ with an ECS architecture, an integrated level editor, and a Lua scripting layer.",
+          "tags": [
+            "C++",
+            "OpenGL",
+            "ECS",
+            "Lua"
+          ],
+          "year": "2021",
+          "type": "Open Source"
+        }
+      ],
+      "voice": [
+        {
+          "title": "Ironclad Chronicles",
+          "desc": "Lead antagonist \"Lord Valen\" in this 80-hour fantasy RPG. Over 12,000 lines of dialogue across 3 DLC expansions. Worked under AAA studio direction.",
+          "tags": [
+            "Video Game",
+            "AAA",
+            "Character",
+            "Fantasy"
+          ],
+          "year": "2024",
+          "type": "Video Game"
+        },
+        {
+          "title": "Galaxy Drift — Audiobook",
+          "desc": "Narrator and 14 distinct characters across a 9-part sci-fi audiobook series. Produced entirely in my home studio. 4.9★ listener rating.",
+          "tags": [
+            "Audiobook",
+            "Narration",
+            "Sci-Fi",
+            "Solo Produced"
+          ],
+          "year": "2023",
+          "type": "Audiobook Series"
+        },
+        {
+          "title": "Midnight Tactics",
+          "desc": "Squad commander \"Captain Rhys\" in this tactical shooter. Directed remotely, 6,000 lines. Also provided additional enemy soldier voices.",
+          "tags": [
+            "Video Game",
+            "Tactical",
+            "Character",
+            "Remote"
+          ],
+          "year": "2023",
+          "type": "Video Game"
+        },
+        {
+          "title": "TechNova Brand Campaign",
+          "desc": "National commercial campaign for a fintech startup. Delivered 40+ broadcast spots in English and Spanish. Warm, authoritative brand voice.",
+          "tags": [
+            "Commercial",
+            "Broadcast",
+            "Bilingual",
+            "VO"
+          ],
+          "year": "2022",
+          "type": "Commercial"
+        }
+      ]
+    },
+    "skills": {
+      "heading": "Skills",
+      "game": [
+        {
+          "name": "Unity / C#",
+          "level": 95
+        },
+        {
+          "name": "Unreal Engine 5 / C++",
+          "level": 88
+        },
+        {
+          "name": "HLSL / GLSL Shaders",
+          "level": 82
+        },
+        {
+          "name": "Godot / GDScript",
+          "level": 78
+        },
+        {
+          "name": "Multiplayer Netcode",
+          "level": 75
+        },
+        {
+          "name": "Blender 3D",
+          "level": 70
+        },
+        {
+          "name": "Python / Tools Dev",
+          "level": 85
+        },
+        {
+          "name": "Git / Version Control",
+          "level": 92
+        }
+      ],
+      "voice": [
+        {
+          "name": "Character Performance",
+          "level": 97
+        },
+        {
+          "name": "Commercial VO",
+          "level": 93
+        },
+        {
+          "name": "Narration",
+          "level": 90
+        },
+        {
+          "name": "Animation / Cartoons",
+          "level": 85
+        },
+        {
+          "name": "ADR / Dubbing",
+          "level": 80
+        },
+        {
+          "name": "Audio Production / DAW",
+          "level": 82
+        },
+        {
+          "name": "Spanish (Bilingual)",
+          "level": 88
+        },
+        {
+          "name": "Cold Reading",
+          "level": 94
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Let's Work Together",
+      "game": "Looking to hire a game developer or collaborate on a project? I'd love to hear about it.",
+      "voice": "Need a voice for your game, film, or commercial? Let's make something unforgettable.",
+      "namePlaceholder": "Your Name",
+      "emailPlaceholder": "Your Email",
+      "messagePlaceholder": "Tell me about your project...",
+      "send": "Send Message",
+      "success": "Message sent! I'll get back to you within 24 hours."
+    },
+    "footer": {
+      "rights": "© 2026 Denis Rusin. All rights reserved.",
+      "madeWith": "Designed & coded with care."
+    }
+  },
+  "es": {
+    "nav": {
+      "about": "Acerca de",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "contact": "Contacto",
+      "switchToVoice": "Actor de Voz",
+      "switchToGame": "Desarrollador"
+    },
+    "hero": {
+      "game": {
+        "greeting": "Hola, soy",
+        "name": "Denis Rusin",
+        "role": "Desarrollador de Videojuegos",
+        "tagline": "Construyendo mundos inmersivos, píxel a píxel.",
+        "sub": "Creo juegos que atrapan a los jugadores y no los sueltan — desde prototipos rápidos hasta lanzamientos comerciales completos.",
+        "cta": "Ver Mis Juegos",
+        "ctaSub": "O explora mi trabajo de voz →"
+      },
+      "voice": {
+        "greeting": "Hola, soy",
+        "name": "Denis Rusin",
+        "role": "Actor de Voz",
+        "tagline": "Dando vida y alma a cada personaje.",
+        "sub": "Desde villanos feroces hasta narradores gentiles, ofrezco actuaciones que perduran mucho después de la última línea.",
+        "cta": "Escuchar mi Demo",
+        "ctaSub": "O explora mi trabajo en juegos →"
+      }
+    },
+    "about": {
+      "heading": "Sobre Mí",
+      "game": {
+        "p1": "Soy un desarrollador de videojuegos con 7 años de experiencia profesional lanzando títulos en PC, consola y móvil.",
+        "p2": "He trabajado en todo, desde experimentos indie en solitario hasta producciones de estudio con 15 personas. Me encanta el momento en que una mecánica encaja.",
+        "p3": "Actualmente abierto a nuevas colaboraciones, contratos freelance y roles a tiempo completo.",
+        "tag1": "Diseño de Sistemas",
+        "tag2": "Programación",
+        "tag3": "Shaders / VFX",
+        "tag4": "Solo & Equipo"
+      },
+      "voice": {
+        "p1": "Soy actor de voz profesional con un rango de cuatro octavas y experiencia en teatro y producción de audio.",
+        "p2": "Mi estudio en casa está completamente tratado y equipado para sesiones remotas. Entrego audio de calidad broadcast rápidamente.",
+        "p3": "Disponible para trabajo de personajes, narración, e-learning y VO comercial.",
+        "tag1": "Rango de Personajes",
+        "tag2": "Estudio en Casa",
+        "tag3": "Entrega Rápida",
+        "tag4": "Sesiones Remotas"
+      }
+    },
+    "projects": {
+      "heading": "Proyectos",
+      "game": [
+        {
+          "title": "Neon Abyss 2",
+          "desc": "Roguelite de plataformas ambientado en un inframundo impregnado de neón. Más de 200k copias vendidas en Steam.",
+          "tags": [
+            "Unity",
+            "C#",
+            "HLSL",
+            "Steam"
+          ],
+          "year": "2024",
+          "type": "Lanzamiento Comercial"
+        },
+        {
+          "title": "Siege Protocol",
+          "desc": "Estrategia multijugador en tiempo real con entornos destructibles. Construido en Unreal Engine 5.",
+          "tags": [
+            "Unreal Engine 5",
+            "C++",
+            "Multijugador",
+            "EOS"
+          ],
+          "year": "2023",
+          "type": "Proyecto de Estudio"
+        },
+        {
+          "title": "Chromaveil",
+          "desc": "Juego narrativo de puzles que explora el duelo a través de mecánicas de color. Ganador de game jam.",
+          "tags": [
+            "Godot",
+            "GDScript",
+            "Solo Dev",
+            "Narrativo"
+          ],
+          "year": "2022",
+          "type": "Indie"
+        },
+        {
+          "title": "Voidstep Engine",
+          "desc": "Un motor de juego 2D personalizado escrito en C++ con arquitectura ECS y capa de scripting Lua.",
+          "tags": [
+            "C++",
+            "OpenGL",
+            "ECS",
+            "Lua"
+          ],
+          "year": "2021",
+          "type": "Código Abierto"
+        }
+      ],
+      "voice": [
+        {
+          "title": "Ironclad Chronicles",
+          "desc": "Antagonista principal \"Lord Valen\" en este RPG de fantasía de 80 horas. Más de 12,000 líneas de diálogo.",
+          "tags": [
+            "Videojuego",
+            "AAA",
+            "Personaje",
+            "Fantasía"
+          ],
+          "year": "2024",
+          "type": "Videojuego"
+        },
+        {
+          "title": "Galaxy Drift — Audiolibro",
+          "desc": "Narrador y 14 personajes distintos en una serie de audiolibros de ciencia ficción de 9 partes.",
+          "tags": [
+            "Audiolibro",
+            "Narración",
+            "Sci-Fi",
+            "Producción Propia"
+          ],
+          "year": "2023",
+          "type": "Serie de Audiolibros"
+        },
+        {
+          "title": "Midnight Tactics",
+          "desc": "Comandante \"Capitán Rhys\" en este shooter táctico. Sesión remota, 6,000 líneas.",
+          "tags": [
+            "Videojuego",
+            "Táctico",
+            "Personaje",
+            "Remoto"
+          ],
+          "year": "2023",
+          "type": "Videojuego"
+        },
+        {
+          "title": "Campaña TechNova",
+          "desc": "Campaña comercial nacional para una startup fintech. Más de 40 spots en inglés y español.",
+          "tags": [
+            "Comercial",
+            "Broadcast",
+            "Bilingüe",
+            "VO"
+          ],
+          "year": "2022",
+          "type": "Comercial"
+        }
+      ]
+    },
+    "skills": {
+      "heading": "Habilidades",
+      "game": [
+        {
+          "name": "Unity / C#",
+          "level": 95
+        },
+        {
+          "name": "Unreal Engine 5 / C++",
+          "level": 88
+        },
+        {
+          "name": "Shaders HLSL / GLSL",
+          "level": 82
+        },
+        {
+          "name": "Godot / GDScript",
+          "level": 78
+        },
+        {
+          "name": "Netcode Multijugador",
+          "level": 75
+        },
+        {
+          "name": "Blender 3D",
+          "level": 70
+        },
+        {
+          "name": "Python / Tools",
+          "level": 85
+        },
+        {
+          "name": "Git",
+          "level": 92
+        }
+      ],
+      "voice": [
+        {
+          "name": "Actuación de Personajes",
+          "level": 97
+        },
+        {
+          "name": "VO Comercial",
+          "level": 93
+        },
+        {
+          "name": "Narración",
+          "level": 90
+        },
+        {
+          "name": "Animación",
+          "level": 85
+        },
+        {
+          "name": "ADR / Doblaje",
+          "level": 80
+        },
+        {
+          "name": "Producción de Audio",
+          "level": 82
+        },
+        {
+          "name": "Español (Bilingüe)",
+          "level": 88
+        },
+        {
+          "name": "Lectura a Vista",
+          "level": 94
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Trabajemos Juntos",
+      "game": "¿Buscas contratar un desarrollador o colaborar en un proyecto? Me encantaría escucharlo.",
+      "voice": "¿Necesitas una voz para tu juego, película o comercial? Creemos algo inolvidable.",
+      "namePlaceholder": "Tu Nombre",
+      "emailPlaceholder": "Tu Email",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "send": "Enviar Mensaje",
+      "success": "¡Mensaje enviado! Te responderé en 24 horas."
+    },
+    "footer": {
+      "rights": "© 2026 Denis Rusin. Todos los derechos reservados.",
+      "madeWith": "Diseñado y programado con cuidado."
+    }
+  },
+  "fr": {
+    "nav": {
+      "about": "À propos",
+      "projects": "Projets",
+      "skills": "Compétences",
+      "contact": "Contact",
+      "switchToVoice": "Comédien VO",
+      "switchToGame": "Dev Jeux"
+    },
+    "hero": {
+      "game": {
+        "greeting": "Bonjour, je suis",
+        "name": "Denis Rusin",
+        "role": "Développeur de Jeux",
+        "tagline": "Forger des mondes immersifs, pixel après pixel.",
+        "sub": "Je crée des jeux qui captivent les joueurs et ne les lâchent pas — des prototypes rapides aux sorties commerciales complètes.",
+        "cta": "Voir Mes Jeux",
+        "ctaSub": "Ou explorer mon travail vocal →"
+      },
+      "voice": {
+        "greeting": "Bonjour, je suis",
+        "name": "Denis Rusin",
+        "role": "Comédien de Doublage",
+        "tagline": "Donner souffle et âme à chaque personnage.",
+        "sub": "Des grands méchants aux narrateurs apaisants, je livre des performances qui restent longtemps après la dernière réplique.",
+        "cta": "Écouter ma Démo",
+        "ctaSub": "Ou explorer mon travail en jeux →"
+      }
+    },
+    "about": {
+      "heading": "À Propos",
+      "game": {
+        "p1": "Je suis développeur de jeux avec 7 ans d'expérience professionnelle sur PC, console et mobile.",
+        "p2": "J'ai travaillé sur tout, des expériences indie en solo aux productions de studio de 15 personnes.",
+        "p3": "Actuellement ouvert à de nouvelles collaborations, contrats freelance et postes à temps plein.",
+        "tag1": "Conception Systèmes",
+        "tag2": "Programmation",
+        "tag3": "Shaders / VFX",
+        "tag4": "Solo & Équipe"
+      },
+      "voice": {
+        "p1": "Comédien de doublage professionnel avec une tessiture de quatre octaves et une formation en théâtre et production audio.",
+        "p2": "Mon studio maison est entièrement traité pour des sessions à distance. Je livre un audio de qualité broadcast rapidement.",
+        "p3": "Disponible pour les personnages, la narration, l'e-learning et le VO commercial.",
+        "tag1": "Large Registre",
+        "tag2": "Studio Maison",
+        "tag3": "Livraison Rapide",
+        "tag4": "Sessions Distantes"
+      }
+    },
+    "projects": {
+      "heading": "Projets",
+      "game": [
+        {
+          "title": "Neon Abyss 2",
+          "desc": "Roguelite de plates-formes dans un monde souterrain baigné de néon. Plus de 200k exemplaires vendus sur Steam.",
+          "tags": [
+            "Unity",
+            "C#",
+            "HLSL",
+            "Steam"
+          ],
+          "year": "2024",
+          "type": "Sortie Commerciale"
+        },
+        {
+          "title": "Siege Protocol",
+          "desc": "Stratégie multijoueur en temps réel avec des environnements destructibles. Construit sous Unreal Engine 5.",
+          "tags": [
+            "Unreal Engine 5",
+            "C++",
+            "Multijoueur",
+            "EOS"
+          ],
+          "year": "2023",
+          "type": "Projet Studio"
+        },
+        {
+          "title": "Chromaveil",
+          "desc": "Jeu de puzzle narratif explorant le deuil à travers des mécaniques de couleur. Vainqueur de game jam.",
+          "tags": [
+            "Godot",
+            "GDScript",
+            "Solo Dev",
+            "Narratif"
+          ],
+          "year": "2022",
+          "type": "Indie"
+        },
+        {
+          "title": "Voidstep Engine",
+          "desc": "Un moteur de jeu 2D personnalisé en C++ avec une architecture ECS et une couche de script Lua.",
+          "tags": [
+            "C++",
+            "OpenGL",
+            "ECS",
+            "Lua"
+          ],
+          "year": "2021",
+          "type": "Open Source"
+        }
+      ],
+      "voice": [
+        {
+          "title": "Ironclad Chronicles",
+          "desc": "Antagoniste principal \"Lord Valen\" dans ce RPG de fantasy de 80 heures. Plus de 12 000 lignes de dialogue.",
+          "tags": [
+            "Jeu Vidéo",
+            "AAA",
+            "Personnage",
+            "Fantasy"
+          ],
+          "year": "2024",
+          "type": "Jeu Vidéo"
+        },
+        {
+          "title": "Galaxy Drift — Livre Audio",
+          "desc": "Narrateur et 14 personnages distincts dans une série de livres audio SF en 9 parties.",
+          "tags": [
+            "Livre Audio",
+            "Narration",
+            "SF",
+            "Prod. Propre"
+          ],
+          "year": "2023",
+          "type": "Série Livre Audio"
+        },
+        {
+          "title": "Midnight Tactics",
+          "desc": "Commandant \"Capitaine Rhys\" dans ce shooter tactique. Session à distance, 6 000 lignes.",
+          "tags": [
+            "Jeu Vidéo",
+            "Tactique",
+            "Personnage",
+            "Distant"
+          ],
+          "year": "2023",
+          "type": "Jeu Vidéo"
+        },
+        {
+          "title": "Campagne TechNova",
+          "desc": "Campagne commerciale nationale pour une fintech. Plus de 40 spots en anglais et espagnol.",
+          "tags": [
+            "Commercial",
+            "Broadcast",
+            "Bilingue",
+            "VO"
+          ],
+          "year": "2022",
+          "type": "Commercial"
+        }
+      ]
+    },
+    "skills": {
+      "heading": "Compétences",
+      "game": [
+        {
+          "name": "Unity / C#",
+          "level": 95
+        },
+        {
+          "name": "Unreal Engine 5 / C++",
+          "level": 88
+        },
+        {
+          "name": "Shaders HLSL / GLSL",
+          "level": 82
+        },
+        {
+          "name": "Godot / GDScript",
+          "level": 78
+        },
+        {
+          "name": "Netcode Multijoueur",
+          "level": 75
+        },
+        {
+          "name": "Blender 3D",
+          "level": 70
+        },
+        {
+          "name": "Python / Tools",
+          "level": 85
+        },
+        {
+          "name": "Git",
+          "level": 92
+        }
+      ],
+      "voice": [
+        {
+          "name": "Jeu de Personnages",
+          "level": 97
+        },
+        {
+          "name": "VO Publicitaire",
+          "level": 93
+        },
+        {
+          "name": "Narration",
+          "level": 90
+        },
+        {
+          "name": "Animation",
+          "level": 85
+        },
+        {
+          "name": "ADR / Doublage",
+          "level": 80
+        },
+        {
+          "name": "Production Audio",
+          "level": 82
+        },
+        {
+          "name": "Espagnol (Bilingue)",
+          "level": 88
+        },
+        {
+          "name": "Lecture à Vue",
+          "level": 94
+        }
+      ]
+    },
+    "contact": {
+      "heading": "Travaillons Ensemble",
+      "game": "Vous cherchez à embaucher un développeur ou à collaborer ? J'adorerais en entendre parler.",
+      "voice": "Besoin d'une voix pour votre jeu, film ou commercial ? Créons quelque chose d'inoubliable.",
+      "namePlaceholder": "Votre Nom",
+      "emailPlaceholder": "Votre Email",
+      "messagePlaceholder": "Parlez-moi de votre projet...",
+      "send": "Envoyer",
+      "success": "Message envoyé ! Je vous répondrai dans les 24 heures."
+    },
+    "footer": {
+      "rights": "© 2026 Denis Rusin. Tous droits réservés.",
+      "madeWith": "Conçu et codé avec soin."
+    }
+  },
+  "ja": {
+    "nav": {
+      "about": "自己紹介",
+      "projects": "プロジェクト",
+      "skills": "スキル",
+      "contact": "お問合せ",
+      "switchToVoice": "声優",
+      "switchToGame": "ゲーム開発"
+    },
+    "hero": {
+      "game": {
+        "greeting": "こんにちは、",
+        "name": "Denis Rusin",
+        "role": "ゲーム開発者",
+        "tagline": "一ピクセルずつ、没入感あふれる世界を作る。",
+        "sub": "プレイヤーを引き込み、離さないゲームを作り続けています。プロトタイプから商業リリースまで。",
+        "cta": "ゲームを見る",
+        "ctaSub": "声優の仕事を見る →"
+      },
+      "voice": {
+        "greeting": "こんにちは、",
+        "name": "Denis Rusin",
+        "role": "声優",
+        "tagline": "すべてのキャラクターに息吹と魂を。",
+        "sub": "凶悪な悪役から穏やかなナレーターまで、最後のセリフの後も長く残る演技を届けます。",
+        "cta": "デモを聴く",
+        "ctaSub": "ゲーム開発の仕事を見る →"
+      }
+    },
+    "about": {
+      "heading": "自己紹介",
+      "game": {
+        "p1": "ゲーム開発者として7年の実務経験を持ち、PC・コンソール・モバイル向けタイトルをリリースしてきました。",
+        "p2": "個人インディーゲームから15人規模のスタジオ制作まで、幅広く経験しています。",
+        "p3": "新たなコラボレーション、フリーランス契約、フルタイムのポジションを歓迎します。",
+        "tag1": "システム設計",
+        "tag2": "ゲームプログラミング",
+        "tag3": "シェーダー / VFX",
+        "tag4": "個人 & チーム"
+      },
+      "voice": {
+        "p1": "4オクターブの音域を持つプロの声優で、演劇と音声制作のバックグラウンドを持ちます。",
+        "p2": "自宅スタジオは完全に防音処理済みで、リモートセッションに対応しています。",
+        "p3": "キャラクター、ナレーション、e-ラーニング、コマーシャルVOに対応可能です。",
+        "tag1": "幅広いキャラクター",
+        "tag2": "自宅スタジオ",
+        "tag3": "迅速な納品",
+        "tag4": "リモートセッション"
+      }
+    },
+    "projects": {
+      "heading": "プロジェクト",
+      "game": [
+        {
+          "title": "Neon Abyss 2",
+          "desc": "ネオンに染まった地下世界を舞台にしたローグライトアクション。Steamで20万本以上販売。",
+          "tags": [
+            "Unity",
+            "C#",
+            "HLSL",
+            "Steam"
+          ],
+          "year": "2024",
+          "type": "商業リリース"
+        },
+        {
+          "title": "Siege Protocol",
+          "desc": "壊せる地形を持つリアルタイム多人数戦略ゲーム。Unreal Engine 5で制作。",
+          "tags": [
+            "UE5",
+            "C++",
+            "マルチプレイヤー",
+            "EOS"
+          ],
+          "year": "2023",
+          "type": "スタジオプロジェクト"
+        },
+        {
+          "title": "Chromaveil",
+          "desc": "カラーメカニクスで悲しみを探るナラティブパズルゲーム。ゲームジャム優勝作品。",
+          "tags": [
+            "Godot",
+            "GDScript",
+            "個人開発",
+            "ナラティブ"
+          ],
+          "year": "2022",
+          "type": "インディー"
+        },
+        {
+          "title": "Voidstep Engine",
+          "desc": "ECSアーキテクチャとLuaスクリプト層を持つカスタム2Dゲームエンジン。",
+          "tags": [
+            "C++",
+            "OpenGL",
+            "ECS",
+            "Lua"
+          ],
+          "year": "2021",
+          "type": "オープンソース"
+        }
+      ],
+      "voice": [
+        {
+          "title": "Ironclad Chronicles",
+          "desc": "80時間のファンタジーRPGで主要悪役\"ロード・ヴェイレン\"を担当。12,000行以上のセリフ。",
+          "tags": [
+            "ビデオゲーム",
+            "AAA",
+            "キャラクター",
+            "ファンタジー"
+          ],
+          "year": "2024",
+          "type": "ビデオゲーム"
+        },
+        {
+          "title": "Galaxy Drift — 朗読",
+          "desc": "9部構成のSFオーディオブックシリーズでナレーターと14の異なるキャラクターを担当。",
+          "tags": [
+            "朗読",
+            "ナレーション",
+            "SF",
+            "自主制作"
+          ],
+          "year": "2023",
+          "type": "オーディオブック"
+        },
+        {
+          "title": "Midnight Tactics",
+          "desc": "タクティカルシューターで隊長\"ライス大尉\"を担当。リモート録音、6,000行。",
+          "tags": [
+            "ビデオゲーム",
+            "タクティカル",
+            "キャラクター",
+            "リモート"
+          ],
+          "year": "2023",
+          "type": "ビデオゲーム"
+        },
+        {
+          "title": "TechNovaキャンペーン",
+          "desc": "フィンテックスタートアップの全国CMキャンペーン。英語・スペイン語で40本以上のスポット収録。",
+          "tags": [
+            "CM",
+            "放送",
+            "バイリンガル",
+            "VO"
+          ],
+          "year": "2022",
+          "type": "コマーシャル"
+        }
+      ]
+    },
+    "skills": {
+      "heading": "スキル",
+      "game": [
+        {
+          "name": "Unity / C#",
+          "level": 95
+        },
+        {
+          "name": "Unreal Engine 5 / C++",
+          "level": 88
+        },
+        {
+          "name": "HLSL / GLSL シェーダー",
+          "level": 82
+        },
+        {
+          "name": "Godot / GDScript",
+          "level": 78
+        },
+        {
+          "name": "マルチプレイヤーNetcode",
+          "level": 75
+        },
+        {
+          "name": "Blender 3D",
+          "level": 70
+        },
+        {
+          "name": "Python / ツール開発",
+          "level": 85
+        },
+        {
+          "name": "Git",
+          "level": 92
+        }
+      ],
+      "voice": [
+        {
+          "name": "キャラクター演技",
+          "level": 97
+        },
+        {
+          "name": "コマーシャルVO",
+          "level": 93
+        },
+        {
+          "name": "ナレーション",
+          "level": 90
+        },
+        {
+          "name": "アニメーション",
+          "level": 85
+        },
+        {
+          "name": "ADR / 吹き替え",
+          "level": 80
+        },
+        {
+          "name": "オーディオ制作",
+          "level": 82
+        },
+        {
+          "name": "スペイン語（バイリンガル）",
+          "level": 88
+        },
+        {
+          "name": "初見読み",
+          "level": 94
+        }
+      ]
+    },
+    "contact": {
+      "heading": "ご一緒に",
+      "game": "ゲーム開発者を探している、またはプロジェクトで協力したい方はぜひご連絡ください。",
+      "voice": "ゲーム・映像・CMに声が必要な方、忘れられない何かを一緒に作りましょう。",
+      "namePlaceholder": "お名前",
+      "emailPlaceholder": "メールアドレス",
+      "messagePlaceholder": "プロジェクトについて教えてください...",
+      "send": "送信する",
+      "success": "メッセージを受け取りました！24時間以内にご返信します。"
+    },
+    "footer": {
+      "rights": "© 2026 Denis Rusin. All rights reserved.",
+      "madeWith": "丁寧に設計・実装しました。"
+    }
+  }
+}
