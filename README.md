@@ -20,9 +20,12 @@ npm run preview
 
 ## Deploy to GitHub Pages
 
-1. Push this repo to GitHub (`Musstard0/Musstard0.github.io`).
-2. In the repo **Settings → Pages**, set **Source** to **GitHub Actions**.
-3. Push to `main` — the workflow in `.github/workflows/deploy.yml` builds and deploys automatically.
+1. Push to `main` — the workflow builds the site and publishes `dist/` to the **`gh-pages`** branch.
+2. In the repo go to **Settings → Pages**.
+3. Under **Build and deployment → Source**, choose **Deploy from a branch**.
+4. Set **Branch** to **`gh-pages`** and folder **`/ (root)`**, then save.
+
+The live site must serve the built `index.html` (with `/assets/...js`), not the source `index.html` (with `/src/main.tsx`). If mobile or desktop shows a white page, Pages is likely pointed at `main` instead of `gh-pages`.
 
 The Vite `base` is `/` for a user site at the domain root.
 

@@ -4,13 +4,29 @@ import type { Language, PortfolioMode } from "../types";
 const MODE_KEY = "portfolio-mode";
 const LANG_KEY = "portfolio-lang";
 
+function safeGetItem(key: string): string | null {
+  try {
+    return localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function safeSetItem(key: string, value: string): void {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    /* private browsing / storage disabled */
+  }
+}
+
 function readMode(): PortfolioMode {
-  const stored = localStorage.getItem(MODE_KEY);
+  const stored = safeGetItem(MODE_KEY);
   return stored === "voice" ? "voice" : "game";
 }
 
 function readLang(): Language {
-  const stored = localStorage.getItem(LANG_KEY);
+  const stored = safeGetItem(LANG_KEY);
   if (stored === "es" || stored === "fr" || stored === "ja") return stored;
   return "en";
 }
@@ -21,12 +37,12 @@ export function usePortfolioPrefs() {
 
   const setMode = useCallback((next: PortfolioMode) => {
     setModeState(next);
-    localStorage.setItem(MODE_KEY, next);
+    safeSetItem(MODE_KEY, next);
   }, []);
 
   const setLang = useCallback((next: Language) => {
     setLangState(next);
-    localStorage.setItem(LANG_KEY, next);
+    safeSetItem(LANG_KEY, next);
   }, []);
 
   const toggleMode = useCallback(() => {
