@@ -3,19 +3,18 @@ export const site = {
   initials: "DR",
   year: 2026,
   url: "https://musstard0.github.io/",
-  /** Set to a Formspree endpoint (e.g. https://formspree.io/f/xxxx) to enable real submissions */
-  formEndpoint: "" as string,
+  contact: {
+    email: "denis.botanov1@gmail.com",
+    telegram: "@DanBot01",
+    telegramUrl: "https://t.me/DanBot01",
+  },
   social: {
     github: "https://github.com/Musstard0",
-    linkedin: "",
     youtube: "",
-    twitter: "",
   },
 } as const;
 
 export const langLabels = {
   en: "EN",
-  es: "ES",
-  fr: "FR",
-  ja: "日本語",
+  ru: "RU",
 } as const;

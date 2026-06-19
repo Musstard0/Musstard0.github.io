@@ -27,7 +27,7 @@ function readMode(): PortfolioMode {
 
 function readLang(): Language {
   const stored = safeGetItem(LANG_KEY);
-  if (stored === "es" || stored === "fr" || stored === "ja") return stored;
+  if (stored === "ru") return "ru";
   return "en";
 }
 

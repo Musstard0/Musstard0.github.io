@@ -4,955 +4,847 @@
       "about": "About",
       "projects": "Projects",
       "skills": "Skills",
-      "contact": "Contact",
-      "switchToVoice": "Voice Actor",
-      "switchToGame": "Game Dev"
+      "contact": "Contact"
+    },
+    "modeSwitcher": {
+      "game": "Game Developer",
+      "voice": "Voice Actor"
     },
     "hero": {
       "game": {
         "greeting": "Hello, I'm",
         "name": "Denis Rusin",
-        "role": "Game Developer",
-        "tagline": "Crafting immersive worlds, one pixel at a time.",
-        "sub": "I build games that pull players in and don't let go — from rapid prototypes to full commercial releases.",
+        "role": "Unity Developer",
+        "tagline": "4+ years in C# and Unity across mobile, PC, and web platforms.",
+        "sub": "Systems architecture, optimization, and game porting. From idea to store release.",
         "cta": "View My Games",
-        "ctaSub": "Or explore my voice work →"
+        "ctaSub": "Switch to voice actor portfolio →"
       },
       "voice": {
         "greeting": "Hello, I'm",
         "name": "Denis Rusin",
         "role": "Voice Actor",
-        "tagline": "Giving breath and soul to every character.",
-        "sub": "From fierce villains to gentle narrators, I deliver performances that linger long after the last line.",
-        "cta": "Hear My Reel",
-        "ctaSub": "Or explore my game dev work →"
+        "tagline": "Giving characters depth in two languages.",
+        "sub": "Native Russian and fluent English (C1). Available for game characters, narration, commercial VO, and remote sessions.",
+        "cta": "View Voice Work",
+        "ctaSub": "Switch to game developer portfolio →"
       }
     },
     "about": {
       "heading": "About Me",
       "game": {
-        "p1": "I'm a game developer with 7 years of professional experience shipping titles across PC, console, and mobile. My expertise spans systems design, gameplay programming, and real-time rendering.",
-        "p2": "I've worked on everything from solo indie experiments to 15-person studio productions. I love the moment a mechanic clicks — when play becomes feel.",
-        "p3": "Currently open to new collaborations, freelance contracts, and full-time roles.",
-        "tag1": "Systems Design",
-        "tag2": "Gameplay Programming",
-        "tag3": "Shader / VFX",
-        "tag4": "Solo & Team"
+        "p1": "Over 4 years of commercial Unity game development. I've worked on mobile and PC projects, both in teams and solo.",
+        "p2": "Full-cycle experience — from early prototypes to release builds and live product support. Main focus: gameplay systems, architecture, and keeping the codebase stable.",
+        "p3": "Comfortable with optimization, mechanics integration, and performance work. Used to team development and production requirements.",
+        "tag1": "Systems & Architecture",
+        "tag2": "Mobile Optimization",
+        "tag3": "Game Design",
+        "tag4": "Documentation"
       },
       "voice": {
-        "p1": "I'm a professional voice actor with a four-octave range and a background in theatre and audio production. I've voiced characters for video games, animated series, audiobooks, and commercial campaigns.",
-        "p2": "My home studio is fully treated and equipped for remote sessions. I deliver broadcast-quality audio quickly and take direction with precision.",
-        "p3": "Available for character work, narration, e-learning, and commercial VO.",
-        "tag1": "Character Range",
+        "p1": "Voice actor working in games and multimedia under the name Denis Rusin. Native Russian with fluent English (C1).",
+        "p2": "Experienced with remote direction, multiple character voices, and fast turnaround from a treated home studio.",
+        "p3": "Available for character work, narration, e-learning, commercial VO, and dubbing. Contact me for reel and samples.",
+        "tag1": "EN / RU Bilingual",
         "tag2": "Home Studio",
-        "tag3": "Fast Turnaround",
+        "tag3": "Game Characters",
         "tag4": "Remote Sessions"
       }
     },
     "projects": {
       "heading": "Projects",
+      "whatIDid": "What I did",
+      "downloadsLabel": "downloads",
       "game": [
         {
-          "title": "Neon Abyss 2",
-          "desc": "A roguelite platformer set in a neon-soaked underworld. 200k+ copies sold on Steam. Systems design, gameplay programming, and custom shader work.",
+          "title": "Mechanic: Car Tuning Simulator",
+          "desc": "3D car mechanic simulator — build, repair, paint, wash, and restore vehicles piece by piece.",
           "tags": [
             "Unity",
-            "C#",
-            "HLSL",
-            "Steam"
+            "Mobile",
+            "Team"
+          ],
+          "year": "2025",
+          "downloads": "1M+",
+          "type": "Mobile — Team",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.mechanic.cartuningsimulator"
+            }
+          ],
+          "details": [
+            "Team project at Azalea Games — my contribution was key systems and refactoring, not the full 1M+ release alone. I left the project in November 2025.",
+            "Built a modular 76-level Company mode (repair, paint, wash, rust removal) in ~1.5 weeks on configs and validators (SOLID).",
+            "Implemented reverse disassembly/assembly with a recursive parent-child structure and dynamic player hints.",
+            "Refactored the monolithic car spawn system to integrate the new mode without breaking legacy content.",
+            "Worked with Photon Fusion for multiplayer sessions — later removed it from the project."
+          ]
+        },
+        {
+          "title": "KAZ Auto Sim",
+          "desc": "Open-world car sandbox — cruise the city, take orders, unlock cars, and customize them.",
+          "tags": [
+            "Unity",
+            "Mobile",
+            "Sandbox"
+          ],
+          "year": "2025",
+          "downloads": "100k+",
+          "type": "Mobile — Lead",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.KVM.KAZAutoSim"
+            }
+          ],
+          "details": [
+            "Rebuilt the architecture of a legacy mobile project in one month — final build size reduced 3×.",
+            "Crash-free sessions improved from 68% to 99.2%.",
+            "In-game phone UI with browser and 6 mini-apps — HUD and apps shipped in one week.",
+            "Vehicle customization: bass-reactive audio, hydraulics, tinting, interior lighting, and visual mods.",
+            "Custom Unity Editor tools cut per-car setup from 3–4 hours to ~20 minutes."
+          ]
+        },
+        {
+          "title": "Offroad Snow: Driving Runner",
+          "desc": "Off-road driving sim inspired by SnowRunner — mud deformation, winch mechanics, and open-world missions. Solo project.",
+          "tags": [
+            "Unity",
+            "Solo",
+            "Mobile"
+          ],
+          "year": "2025",
+          "downloads": "50k+",
+          "type": "Solo Release",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.azalea.offroadsim"
+            },
+            {
+              "type": "appstore",
+              "url": "https://apps.apple.com/app/offroad-snow-driving-runner/id6738647291"
+            }
+          ],
+          "details": [
+            "Solo full-cycle development — from design document to Google Play and App Store release in ~1.5 months.",
+            "Mobile optimization: snow/mud shaders and stable 60 FPS on high settings on low-end devices.",
+            "Editor tools to speed up production (terrain chunking, vehicle setup tools, etc.).",
+            "For iOS: full UI rework in two days; complete tutorial built from scratch in one week."
+          ]
+        },
+        {
+          "title": "Pouch Popper",
+          "desc": "Brand promo mini-game — scan a QR code on packaging, play, and earn rewards.",
+          "tags": [
+            "Vue",
+            "Next.js",
+            "TypeScript",
+            "Promo"
           ],
           "year": "2024",
-          "type": "Commercial Release"
+          "type": "Web — Promo",
+          "links": [
+            {
+              "type": "web",
+              "url": "https://ministryofsnus.com/#"
+            }
+          ],
+          "details": [
+            "Web promo game tied to QR codes on product packaging.",
+            "Stack: Vue.js, TypeScript, and Next.js.",
+            "Built an admin panel on Forest Admin for campaign management.",
+            "Short turnaround from concept to live launch."
+          ]
         },
         {
-          "title": "Siege Protocol",
-          "desc": "Real-time multiplayer strategy with destructible environments. Built entirely in Unreal Engine 5. Networked using dedicated servers with rollback netcode.",
+          "title": "Hometopia",
+          "desc": "PC home design and colony sim on Steam — one of the largest teams I worked on.",
           "tags": [
-            "Unreal Engine 5",
-            "C++",
-            "Multiplayer",
-            "EOS"
+            "Unity",
+            "PC",
+            "Steam",
+            "PlayJoy"
+          ],
+          "year": "2023–2024",
+          "type": "PC — Team",
+          "links": [
+            {
+              "type": "steam",
+              "url": "https://store.steampowered.com/app/1138640/Hometopia/"
+            }
+          ],
+          "details": [
+            "Junior programmer — ticket bugfixes and pre-release patches for the Steam build.",
+            "Helped with stability and platform support before launch.",
+            "Spotted a bug in a YouTuber's promo video, logged it, and fixed it."
+          ]
+        },
+        {
+          "title": "Turnip Boy Commits Tax Evasion",
+          "desc": "Action-adventure about a turnip evading taxes — 1M+ downloads on mobile stores.",
+          "tags": [
+            "Unity",
+            "Mobile Port",
+            "Junior",
+            "PlayJoy"
           ],
           "year": "2023",
-          "type": "Studio Project"
+          "downloads": "1M+",
+          "type": "Mobile Port",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.pid.turnipboy"
+            },
+            {
+              "type": "appstore",
+              "url": "https://apps.apple.com/app/turnip-boy-commits-tax-evasion/id1619597549"
+            },
+            {
+              "type": "steam",
+              "url": "https://store.steampowered.com/app/1205450/Turnip_Boy_Commits_Tax_Evasion/"
+            }
+          ],
+          "details": [
+            "Helped with mobile porting and bugfixes as a junior programmer.",
+            "Android and iOS — UI, performance, and platform requirements."
+          ]
         },
         {
-          "title": "Chromaveil",
-          "desc": "A narrative puzzle game exploring grief through color mechanics. 48-hour jam winner, later expanded to a full release. Solo dev.",
+          "title": "Guitar Intervals Unleashed",
+          "desc": "Mobile guitar education app — interval training on the fretboard using the NANDI method.",
           "tags": [
-            "Godot",
-            "GDScript",
-            "Solo Dev",
-            "Narrative"
+            "Mobile",
+            "Education",
+            "Guitar",
+            "App"
           ],
-          "year": "2022",
-          "type": "Indie Release"
+          "year": "2023",
+          "type": "Mobile App",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.TheNandiMethodLLC.GuitarIntervalsUnleashed"
+            },
+            {
+              "type": "appstore",
+              "url": "https://apps.apple.com/us/app/guitar-intervals-unleashed/id1476820512"
+            }
+          ],
+          "details": [
+            "Core app development and interactive lesson flows for interval training.",
+            "Worked closely with guitar teachers to shape exercises and curriculum.",
+            "My music education background helped structure lessons and practice modes."
+          ]
         },
         {
-          "title": "Voidstep Engine",
-          "desc": "A custom 2D game engine written in C++ with an ECS architecture, an integrated level editor, and a Lua scripting layer.",
+          "title": "Quokka Puzzles",
+          "desc": "Educational jigsaw puzzle game for kids — themed packs and adjustable difficulty levels.",
           "tags": [
-            "C++",
-            "OpenGL",
-            "ECS",
-            "Lua"
+            "Unity",
+            "Kids",
+            "Puzzle",
+            "PlayJoy"
           ],
-          "year": "2021",
-          "type": "Open Source"
+          "year": "2023",
+          "downloads": "100k+",
+          "type": "Mobile — Support",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.adducate.quokkapuzzles&hl=ru"
+            }
+          ],
+          "details": [
+            "Bugfixes, patches, mobile optimization, and polish as a junior at PlayJoy Studios.",
+            "Google Play release support and post-launch iteration."
+          ]
+        },
+        {
+          "title": "Geotaktika",
+          "desc": "Web tactical training simulator — combat scenarios, optics-based observation, and a mission editor.",
+          "tags": [
+            "Web",
+            "THREE.js",
+            "Finist",
+            "Simulator"
+          ],
+          "year": "2022–2023",
+          "type": "Web",
+          "links": [
+            {
+              "type": "web",
+              "url": "https://geotaktika.com/"
+            }
+          ],
+          "details": [
+            "At Finist — tactical trainer built with JavaScript and THREE.js.",
+            "Modular AI on Behavior Trees: navigation, cover, and optical observation/targeting.",
+            "Mission system for solo and team exercises (binoculars, periscope).",
+            "Terrain tools and mission editor for instructors to build training scenarios."
+          ]
+        },
+        {
+          "title": "Other Projects",
+          "desc": "Game jams, earlier studio work, teaching, and competition wins outside the shipped titles above.",
+          "tags": [
+            "Game Jams",
+            "HmmGames",
+            "WorldSkills"
+          ],
+          "type": "More Work",
+          "details": [
+            "PlayJoy Studios: web game platform (Vue.js, Node.js, Docker) and hypercasual/educational titles as a junior.",
+            "HmmGames: tech lead for student teams — platformers, roguelike TD, movement shooter, and 3D-printer training sim.",
+            "WorldSkills Kazakhstan: multiple 1st places in game dev, mobile apps, and IT for business.",
+            "Ongoing pet projects from game jams."
+          ]
         }
       ],
       "voice": [
         {
-          "title": "Ironclad Chronicles",
-          "desc": "Lead antagonist \"Lord Valen\" in this 80-hour fantasy RPG. Over 12,000 lines of dialogue across 3 DLC expansions. Worked under AAA studio direction.",
+          "title": "Video Game Characters",
+          "desc": "Character and NPC voice work for indie and AA titles. Remote sessions with direction.",
           "tags": [
             "Video Game",
-            "AAA",
             "Character",
-            "Fantasy"
+            "Remote",
+            "EN / RU"
           ],
-          "year": "2024",
-          "type": "Video Game"
+          "year": "—",
+          "type": "Game VO",
+          "details": [
+            "Character and NPC performances for game projects.",
+            "Comfortable with multiple takes and remote direction.",
+            "Bilingual delivery in English (C1) and native Russian."
+          ]
         },
         {
-          "title": "Galaxy Drift — Audiobook",
-          "desc": "Narrator and 14 distinct characters across a 9-part sci-fi audiobook series. Produced entirely in my home studio. 4.9★ listener rating.",
+          "title": "Narration & E-Learning",
+          "desc": "Documentary-style narration and educational content in EN and RU.",
           "tags": [
-            "Audiobook",
             "Narration",
-            "Sci-Fi",
-            "Solo Produced"
+            "E-Learning",
+            "Documentary",
+            "Bilingual"
           ],
-          "year": "2023",
-          "type": "Audiobook Series"
+          "year": "—",
+          "type": "Narration",
+          "details": [
+            "Clear narration for educational and documentary formats.",
+            "Consistent tone across long-form sessions.",
+            "Home studio recording with fast turnaround."
+          ]
         },
         {
-          "title": "Midnight Tactics",
-          "desc": "Squad commander \"Captain Rhys\" in this tactical shooter. Directed remotely, 6,000 lines. Also provided additional enemy soldier voices.",
-          "tags": [
-            "Video Game",
-            "Tactical",
-            "Character",
-            "Remote"
-          ],
-          "year": "2023",
-          "type": "Video Game"
-        },
-        {
-          "title": "TechNova Brand Campaign",
-          "desc": "National commercial campaign for a fintech startup. Delivered 40+ broadcast spots in English and Spanish. Warm, authoritative brand voice.",
+          "title": "Commercial & Brand VO",
+          "desc": "Promotional spots and brand campaigns.",
           "tags": [
             "Commercial",
-            "Broadcast",
-            "Bilingual",
+            "Brand",
+            "Promo",
             "VO"
           ],
-          "year": "2022",
-          "type": "Commercial"
+          "year": "—",
+          "type": "Commercial",
+          "details": [
+            "Brand voice development with creative teams.",
+            "Broadcast and digital spot delivery."
+          ]
+        },
+        {
+          "title": "Dubbing & ADR",
+          "desc": "Lip-sync dubbing and ADR with home studio output.",
+          "tags": [
+            "ADR",
+            "Dubbing",
+            "Home Studio",
+            "Post-Prod"
+          ],
+          "year": "—",
+          "type": "Post-Production",
+          "details": [
+            "ADR and dubbing for games and multimedia.",
+            "Lip-sync accuracy and quick revision cycles."
+          ]
         }
       ]
     },
     "skills": {
       "heading": "Skills",
-      "game": [
-        {
-          "name": "Unity / C#",
-          "level": 95
-        },
-        {
-          "name": "Unreal Engine 5 / C++",
-          "level": 88
-        },
-        {
-          "name": "HLSL / GLSL Shaders",
-          "level": 82
-        },
-        {
-          "name": "Godot / GDScript",
-          "level": 78
-        },
-        {
-          "name": "Multiplayer Netcode",
-          "level": 75
-        },
-        {
-          "name": "Blender 3D",
-          "level": 70
-        },
-        {
-          "name": "Python / Tools Dev",
-          "level": 85
-        },
-        {
-          "name": "Git / Version Control",
-          "level": 92
-        }
-      ],
-      "voice": [
-        {
-          "name": "Character Performance",
-          "level": 97
-        },
-        {
-          "name": "Commercial VO",
-          "level": 93
-        },
-        {
-          "name": "Narration",
-          "level": 90
-        },
-        {
-          "name": "Animation / Cartoons",
-          "level": 85
-        },
-        {
-          "name": "ADR / Dubbing",
-          "level": 80
-        },
-        {
-          "name": "Audio Production / DAW",
-          "level": 82
-        },
-        {
-          "name": "Spanish (Bilingual)",
-          "level": 88
-        },
-        {
-          "name": "Cold Reading",
-          "level": 94
-        }
-      ]
+      "strengthsLabel": "Core strengths",
+      "stackLabel": "Tech stack",
+      "game": {
+        "strengths": [
+          "Game optimization — Unity Profiler, memory and object pooling, Addressables, draw-call batching, LOD and texture atlases, shader tuning, build-size reduction",
+          "Clean architecture — separation of concerns, interfaces and loose coupling, incremental refactoring without breaking live content",
+          "Core mechanics, custom shaders, and editor tools that speed up production",
+          "Shipping projects from idea to release",
+          "Team coordination — 2D/3D artists and testers; documentation in Jira/ClickUp, etc."
+        ],
+        "stack": [
+          "C#, Unity3D, Addressables",
+          "Photon PUN / Fusion",
+          "Firebase, AdMob, Appmetrica, Appodeal, Crashlytics",
+          "Git, Jira, ClickUp, Rider, Figma",
+          "Node.js, Docker, PostgreSQL (game backend experience)",
+          "JavaScript, TypeScript, Vue.js"
+        ]
+      },
+      "voice": {
+        "strengths": [
+          "Character and NPC performance with direction",
+          "Bilingual EN (C1) / native RU delivery",
+          "Narration and e-learning clarity",
+          "Fast turnaround from home studio",
+          "Commercial and brand voice reads"
+        ],
+        "stack": [
+          "Home studio / DAW workflow",
+          "Remote sessions (Source Connect–style)",
+          "ADR and lip-sync dubbing",
+          "Cold reading"
+        ]
+      }
     },
     "contact": {
       "heading": "Let's Work Together",
-      "game": "Looking to hire a game developer or collaborate on a project? I'd love to hear about it.",
+      "game": "Looking to hire a Unity developer or collaborate on a project? Reach out.",
       "voice": "Need a voice for your game, film, or commercial? Let's make something unforgettable.",
-      "namePlaceholder": "Your Name",
-      "emailPlaceholder": "Your Email",
-      "messagePlaceholder": "Tell me about your project...",
-      "send": "Send Message",
-      "success": "Message sent! I'll get back to you within 24 hours."
+      "emailLabel": "Email",
+      "telegramLabel": "Telegram",
+      "email": "denis.botanov1@gmail.com",
+      "telegram": "@DanBot01"
     },
     "footer": {
       "rights": "© 2026 Denis Rusin. All rights reserved.",
       "madeWith": "Designed & coded with care."
     }
   },
-  "es": {
+  "ru": {
     "nav": {
-      "about": "Acerca de",
-      "projects": "Proyectos",
-      "skills": "Habilidades",
-      "contact": "Contacto",
-      "switchToVoice": "Actor de Voz",
-      "switchToGame": "Desarrollador"
+      "about": "Обо мне",
+      "projects": "Проекты",
+      "skills": "Навыки",
+      "contact": "Контакт"
+    },
+    "modeSwitcher": {
+      "game": "Геймдев",
+      "voice": "Актёр озвучки"
     },
     "hero": {
       "game": {
-        "greeting": "Hola, soy",
-        "name": "Denis Rusin",
-        "role": "Desarrollador de Videojuegos",
-        "tagline": "Construyendo mundos inmersivos, píxel a píxel.",
-        "sub": "Creo juegos que atrapan a los jugadores y no los sueltan — desde prototipos rápidos hasta lanzamientos comerciales completos.",
-        "cta": "Ver Mis Juegos",
-        "ctaSub": "O explora mi trabajo de voz →"
+        "greeting": "Привет, я",
+        "name": "Денис Русин",
+        "role": "Unity-разработчик",
+        "tagline": "4+ лет в C# и Unity на мобильных, PC и web платформах.",
+        "sub": "Архитектура систем, оптимизация и портирование игр. Разработка от идеи до релиза в стор.",
+        "cta": "Смотреть игры",
+        "ctaSub": "Перейти к портфолио актёра озвучки →"
       },
       "voice": {
-        "greeting": "Hola, soy",
-        "name": "Denis Rusin",
-        "role": "Actor de Voz",
-        "tagline": "Dando vida y alma a cada personaje.",
-        "sub": "Desde villanos feroces hasta narradores gentiles, ofrezco actuaciones que perduran mucho después de la última línea.",
-        "cta": "Escuchar mi Demo",
-        "ctaSub": "O explora mi trabajo en juegos →"
+        "greeting": "Привет, я",
+        "name": "Денис Русин",
+        "role": "Актёр озвучки",
+        "tagline": "Даю персонажам глубину на двух языках.",
+        "sub": "Родной русский и свободный английский (C1). Персонажи, нарратив, коммерческий VO и удалённые сессии.",
+        "cta": "Смотреть работы",
+        "ctaSub": "Перейти к портфолио геймдева →"
       }
     },
     "about": {
-      "heading": "Sobre Mí",
+      "heading": "Обо мне",
       "game": {
-        "p1": "Soy un desarrollador de videojuegos con 7 años de experiencia profesional lanzando títulos en PC, consola y móvil.",
-        "p2": "He trabajado en todo, desde experimentos indie en solitario hasta producciones de estudio con 15 personas. Me encanta el momento en que una mecánica encaja.",
-        "p3": "Actualmente abierto a nuevas colaboraciones, contratos freelance y roles a tiempo completo.",
-        "tag1": "Diseño de Sistemas",
-        "tag2": "Programación",
-        "tag3": "Shaders / VFX",
-        "tag4": "Solo & Equipo"
+        "p1": "Более 4 лет занимаюсь коммерческой разработкой игр на Unity. Участвовал в мобильных и PC-проектах, работал в командах и самостоятельно.",
+        "p2": "Имею опыт полного цикла разработки — от ранних прототипов до релизных билдов и поддержки продукта. Основной фокус — разработка геймплейных систем, архитектура и поддержка стабильной кодовой базы.",
+        "p3": "Уверенно работаю с задачами оптимизации, интеграции механик и улучшения производительности. Привык к командной разработке и требованиям продакшена.",
+        "tag1": "Архитектура",
+        "tag2": "Оптимизация",
+        "tag3": "Геймдизайн",
+        "tag4": "Документация"
       },
       "voice": {
-        "p1": "Soy actor de voz profesional con un rango de cuatro octavas y experiencia en teatro y producción de audio.",
-        "p2": "Mi estudio en casa está completamente tratado y equipado para sesiones remotas. Entrego audio de calidad broadcast rápidamente.",
-        "p3": "Disponible para trabajo de personajes, narración, e-learning y VO comercial.",
-        "tag1": "Rango de Personajes",
-        "tag2": "Estudio en Casa",
-        "tag3": "Entrega Rápida",
-        "tag4": "Sesiones Remotas"
+        "p1": "Актёр озвучки в играх и мультимедиа. Родной русский, свободный английский (C1).",
+        "p2": "Опыт удалённой режиссуры, нескольких голосов персонажей и быстрой сдачи из домашней студии.",
+        "p3": "Доступен для персонажей, нарратива, e-learning, коммерческого VO и дублирования. Пишите за демо и рилом.",
+        "tag1": "EN / RU",
+        "tag2": "Домашняя студия",
+        "tag3": "Игровые роли",
+        "tag4": "Удалённо"
       }
     },
     "projects": {
-      "heading": "Proyectos",
+      "heading": "Проекты",
+      "whatIDid": "Что я делал",
+      "downloadsLabel": "загрузок",
       "game": [
         {
-          "title": "Neon Abyss 2",
-          "desc": "Roguelite de plataformas ambientado en un inframundo impregnado de neón. Más de 200k copias vendidas en Steam.",
+          "title": "Mechanic: Car Tuning Simulator",
+          "desc": "3D-симулятор автомеханика — сборка, ремонт, покраска и восстановление машин.",
           "tags": [
             "Unity",
-            "C#",
-            "HLSL",
-            "Steam"
+            "Mobile",
+            "Team"
+          ],
+          "year": "2025",
+          "downloads": "1M+",
+          "type": "Мобильная — команда",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.mechanic.cartuningsimulator"
+            }
+          ],
+          "details": [
+            "Командный проект в Azalea Games — мой вклад в ключевые системы и рефакторинг, а не весь релиз на 1M+. Ушёл с проекта в ноябре 2025.",
+            "Модульный режим «Компания» на 76 уровней за ~1.5 недели на конфигах и валидаторах (SOLID).",
+            "Обратная разборка/сборка с рекурсивной структурой «родитель-потомок» и динамическими подсказками.",
+            "Рефакторинг монолитной системы спавна машин без поломки старого контента.",
+            "Photon Fusion для мультиплеера — позже вырезан из проекта."
+          ]
+        },
+        {
+          "title": "KAZ Auto Sim",
+          "desc": "Песочница с машинами — катайся по городу, выполняй заказы, кастомизируй авто.",
+          "tags": [
+            "Unity",
+            "Mobile",
+            "Sandbox"
+          ],
+          "year": "2025",
+          "downloads": "100k+",
+          "type": "Мобильная — лид",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.KVM.KAZAutoSim"
+            }
+          ],
+          "details": [
+            "Переписал архитектуру легаси-проекта за месяц — размер финальной сборки сократился в 3 раза.",
+            "Стабильность сессий: доля без крашей выросла с 68% до 99,2%.",
+            "Внутриигровой телефон с браузером и 6 мини-приложениями — HUD и приложения за неделю.",
+            "Кастомизация авто: звук с реакцией на бас, гидравлика, тонировка, подсветка салона.",
+            "Редакторские инструменты сократили настройку одной машины с 3–4 часов до ~20 минут."
+          ]
+        },
+        {
+          "title": "Offroad Snow: Driving Runner",
+          "desc": "Внедорожный сим в духе SnowRunner — грязь, лебёдка, открытый мир. Соло-проект.",
+          "tags": [
+            "Unity",
+            "Solo",
+            "Mobile"
+          ],
+          "year": "2025",
+          "downloads": "50k+",
+          "type": "Соло-релиз",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.azalea.offroadsim"
+            },
+            {
+              "type": "appstore",
+              "url": "https://apps.apple.com/app/offroad-snow-driving-runner/id6738647291"
+            }
+          ],
+          "details": [
+            "Соло-разработка полного цикла: от дизайн-документа до публикации в Google Play и App Store за ~1.5 месяца.",
+            "Оптимизация под слабые устройства: шейдеры снега/грязи, стабильные 60 FPS на высоких настройках.",
+            "Инструменты редактора для ускорения продакшна (нарезка террейна на чанки, сетап машин и пр.).",
+            "Для iOS за 2 дня полностью переделан UI; за неделю — полноценный обучающий туториал."
+          ]
+        },
+        {
+          "title": "Pouch Popper",
+          "desc": "Промо мини-игра — сканируй QR на упаковке, играй и получай бонусы.",
+          "tags": [
+            "Vue",
+            "Next.js",
+            "TypeScript",
+            "Promo"
           ],
           "year": "2024",
-          "type": "Lanzamiento Comercial"
+          "type": "Web — промо",
+          "links": [
+            {
+              "type": "web",
+              "url": "https://ministryofsnus.com/#"
+            }
+          ],
+          "details": [
+            "Веб-промо с QR-кодами на упаковке продукта.",
+            "Стек: Vue.js, TypeScript и Next.js.",
+            "Админка на Forest Admin для управления кампанией.",
+            "Короткий цикл от концепта до запуска."
+          ]
         },
         {
-          "title": "Siege Protocol",
-          "desc": "Estrategia multijugador en tiempo real con entornos destructibles. Construido en Unreal Engine 5.",
+          "title": "Hometopia",
+          "desc": "PC-симулятор дизайна домов и колонии в Steam — одна из самых больших команд в моём опыте.",
           "tags": [
-            "Unreal Engine 5",
-            "C++",
-            "Multijugador",
-            "EOS"
+            "Unity",
+            "PC",
+            "Steam",
+            "PlayJoy"
+          ],
+          "year": "2023–2024",
+          "type": "PC — команда",
+          "links": [
+            {
+              "type": "steam",
+              "url": "https://store.steampowered.com/app/1138640/Hometopia/"
+            }
+          ],
+          "details": [
+            "Junior-программист — багфиксы по тикетам и пререлизные патчи для Steam-сборки.",
+            "Помогал со стабильностью и поддержкой платформы перед релизом.",
+            "Нашёл баг в промо-ролике ютубера, завёл тикет и исправил."
+          ]
+        },
+        {
+          "title": "Turnip Boy Commits Tax Evasion",
+          "desc": "Приключение про репу, которая уходит от налогов — 1M+ загрузок на мобильных.",
+          "tags": [
+            "Unity",
+            "Mobile Port",
+            "Junior",
+            "PlayJoy"
           ],
           "year": "2023",
-          "type": "Proyecto de Estudio"
+          "downloads": "1M+",
+          "type": "Мобильный порт",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.pid.turnipboy"
+            },
+            {
+              "type": "appstore",
+              "url": "https://apps.apple.com/app/turnip-boy-commits-tax-evasion/id1619597549"
+            },
+            {
+              "type": "steam",
+              "url": "https://store.steampowered.com/app/1205450/Turnip_Boy_Commits_Tax_Evasion/"
+            }
+          ],
+          "details": [
+            "Помогал в портировании на мобильные и чинил баги на позиции junior-программиста.",
+            "Android и iOS — UI, производительность, требования платформ."
+          ]
         },
         {
-          "title": "Chromaveil",
-          "desc": "Juego narrativo de puzles que explora el duelo a través de mecánicas de color. Ganador de game jam.",
+          "title": "Guitar Intervals Unleashed",
+          "desc": "Мобильное приложение для обучения гитаре — тренировка интервалов на грифе по методу NANDI.",
           "tags": [
-            "Godot",
-            "GDScript",
-            "Solo Dev",
-            "Narrativo"
+            "Mobile",
+            "Education",
+            "Guitar",
+            "App"
           ],
-          "year": "2022",
-          "type": "Indie"
+          "year": "2023",
+          "type": "Мобильное приложение",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.TheNandiMethodLLC.GuitarIntervalsUnleashed"
+            },
+            {
+              "type": "appstore",
+              "url": "https://apps.apple.com/us/app/guitar-intervals-unleashed/id1476820512"
+            }
+          ],
+          "details": [
+            "Разработка ядра приложения и интерактивных уроков по интервальному слуху.",
+            "Тесная работа с преподавателями гитары над упражнениями и программой.",
+            "Музыкальное образование помогло выстроить структуру уроков и режимов практики."
+          ]
         },
         {
-          "title": "Voidstep Engine",
-          "desc": "Un motor de juego 2D personalizado escrito en C++ con arquitectura ECS y capa de scripting Lua.",
+          "title": "Quokka Puzzles",
+          "desc": "Образовательная игра-пазл для детей — тематические наборы и настраиваемая сложность.",
           "tags": [
-            "C++",
-            "OpenGL",
-            "ECS",
-            "Lua"
+            "Unity",
+            "Kids",
+            "Puzzle",
+            "PlayJoy"
           ],
-          "year": "2021",
-          "type": "Código Abierto"
+          "year": "2023",
+          "downloads": "100k+",
+          "type": "Мобильная — поддержка",
+          "links": [
+            {
+              "type": "playmarket",
+              "url": "https://play.google.com/store/apps/details?id=com.adducate.quokkapuzzles&hl=ru"
+            }
+          ],
+          "details": [
+            "Багфиксы, патчи, оптимизация под мобильные и полиш на позиции junior в PlayJoy Studios.",
+            "Поддержка релиза в Google Play и итерации после запуска."
+          ]
+        },
+        {
+          "title": "Geotaktika",
+          "desc": "Веб-тренажёр тактической подготовки — боевые сценарии, наблюдение через оптику и редактор миссий.",
+          "tags": [
+            "Web",
+            "THREE.js",
+            "Finist",
+            "Simulator"
+          ],
+          "year": "2022–2023",
+          "type": "Web",
+          "links": [
+            {
+              "type": "web",
+              "url": "https://geotaktika.com/"
+            }
+          ],
+          "details": [
+            "В Finist — тактический тренажёр на JavaScript и THREE.js.",
+            "Модульный AI на Behavior Trees: навигация, укрытия, оптическое наблюдение и прицеливание.",
+            "Система миссий для одиночных и командных упражнений (бинокль, перископ).",
+            "Инструменты террейна и редактор миссий для инструкторов."
+          ]
+        },
+        {
+          "title": "Другие проекты",
+          "desc": "Геймджемы, ранняя студийная работа, преподавание и победы на соревнованиях.",
+          "tags": [
+            "Геймджемы",
+            "HmmGames",
+            "WorldSkills"
+          ],
+          "type": "Ещё работы",
+          "details": [
+            "PlayJoy Studios: веб-платформа (Vue.js, Node.js, Docker) и гиперказуал/hypercasual как junior.",
+            "HmmGames: тимлид студенческих команд — платформеры, roguelike TD, movement shooter.",
+            "WorldSkills Kazakhstan: несколько 1-х мест по геймдеву, мобильным приложениям и IT.",
+            "Пет-проекты с геймджемов."
+          ]
         }
       ],
       "voice": [
         {
-          "title": "Ironclad Chronicles",
-          "desc": "Antagonista principal \"Lord Valen\" en este RPG de fantasía de 80 horas. Más de 12,000 líneas de diálogo.",
+          "title": "Персонажи в играх",
+          "desc": "Озвучка персонажей и NPC для инди и AA. Удалённые сессии с режиссурой.",
           "tags": [
-            "Videojuego",
-            "AAA",
-            "Personaje",
-            "Fantasía"
+            "Видеоигра",
+            "Персонаж",
+            "Удалённо",
+            "EN / RU"
           ],
-          "year": "2024",
-          "type": "Videojuego"
+          "year": "—",
+          "type": "Игровой VO",
+          "details": [
+            "Озвучка персонажей и NPC.",
+            "Несколько дублей и удалённая режиссура.",
+            "Английский (C1) и родной русский."
+          ]
         },
         {
-          "title": "Galaxy Drift — Audiolibro",
-          "desc": "Narrador y 14 personajes distintos en una serie de audiolibros de ciencia ficción de 9 partes.",
+          "title": "Нарратив и E-Learning",
+          "desc": "Документальный нарратив и обучающий контент на EN и RU.",
           "tags": [
-            "Audiolibro",
-            "Narración",
-            "Sci-Fi",
-            "Producción Propia"
+            "Нарратив",
+            "E-Learning",
+            "Документальный",
+            "Двуязычный"
           ],
-          "year": "2023",
-          "type": "Serie de Audiolibros"
+          "year": "—",
+          "type": "Нарратив",
+          "details": [
+            "Чёткий нарратив для обучения и документалки.",
+            "Стабильный тон.",
+            "Домашняя студия."
+          ]
         },
         {
-          "title": "Midnight Tactics",
-          "desc": "Comandante \"Capitán Rhys\" en este shooter táctico. Sesión remota, 6,000 líneas.",
+          "title": "Коммерческий VO",
+          "desc": "Рекламные ролики и брендовые кампании.",
           "tags": [
-            "Videojuego",
-            "Táctico",
-            "Personaje",
-            "Remoto"
-          ],
-          "year": "2023",
-          "type": "Videojuego"
-        },
-        {
-          "title": "Campaña TechNova",
-          "desc": "Campaña comercial nacional para una startup fintech. Más de 40 spots en inglés y español.",
-          "tags": [
-            "Comercial",
-            "Broadcast",
-            "Bilingüe",
+            "Реклама",
+            "Бренд",
+            "Промо",
             "VO"
           ],
-          "year": "2022",
-          "type": "Comercial"
+          "year": "—",
+          "type": "Коммерческий",
+          "details": [
+            "Голос бренда с креативной командой.",
+            "Эфирные и digital-ролики."
+          ]
+        },
+        {
+          "title": "Дублирование и ADR",
+          "desc": "Лип-синк и ADR с записью в домашней студии.",
+          "tags": [
+            "ADR",
+            "Дублирование",
+            "Домашняя студия",
+            "Пост-продакшн"
+          ],
+          "year": "—",
+          "type": "Пост-продакшн",
+          "details": [
+            "ADR и дублирование.",
+            "Лип-синк и быстрые правки."
+          ]
         }
       ]
     },
     "skills": {
-      "heading": "Habilidades",
-      "game": [
-        {
-          "name": "Unity / C#",
-          "level": 95
-        },
-        {
-          "name": "Unreal Engine 5 / C++",
-          "level": 88
-        },
-        {
-          "name": "Shaders HLSL / GLSL",
-          "level": 82
-        },
-        {
-          "name": "Godot / GDScript",
-          "level": 78
-        },
-        {
-          "name": "Netcode Multijugador",
-          "level": 75
-        },
-        {
-          "name": "Blender 3D",
-          "level": 70
-        },
-        {
-          "name": "Python / Tools",
-          "level": 85
-        },
-        {
-          "name": "Git",
-          "level": 92
-        }
-      ],
-      "voice": [
-        {
-          "name": "Actuación de Personajes",
-          "level": 97
-        },
-        {
-          "name": "VO Comercial",
-          "level": 93
-        },
-        {
-          "name": "Narración",
-          "level": 90
-        },
-        {
-          "name": "Animación",
-          "level": 85
-        },
-        {
-          "name": "ADR / Doblaje",
-          "level": 80
-        },
-        {
-          "name": "Producción de Audio",
-          "level": 82
-        },
-        {
-          "name": "Español (Bilingüe)",
-          "level": 88
-        },
-        {
-          "name": "Lectura a Vista",
-          "level": 94
-        }
-      ]
+      "heading": "Навыки",
+      "strengthsLabel": "Сильные стороны",
+      "stackLabel": "Технологический стек",
+      "game": {
+        "strengths": [
+          "Оптимизация игр — Unity Profiler, управление памятью и пулинг объектов, Addressables, батчинг и снижение draw calls, LOD и атласы текстур, настройка шейдеров и размера сборки",
+          "Чистая архитектура — разделение ответственности, интерфейсы и слабая связанность, пошаговый рефакторинг без поломки контента",
+          "Разработка кор-механик, шейдеров и инструментов редактора, которые ускоряют продакшн",
+          "Разработка проектов от идеи до релиза",
+          "Координация команды — 2D/3D-художники и тестеры; документация в Jira/ClickUp и пр."
+        ],
+        "stack": [
+          "C#, Unity3D, Addressables",
+          "Photon PUN / Fusion",
+          "Firebase, AdMob, Appmetrica, Appodeal, Crashlytics",
+          "Git, Jira, ClickUp, Rider, Figma",
+          "Node.js, Docker, PostgreSQL",
+          "JavaScript, TypeScript, Vue.js"
+        ]
+      },
+      "voice": {
+        "strengths": [
+          "Игра персонажей и NPC с режиссурой",
+          "Двуязычная подача EN (C1) / родной RU",
+          "Нарратив и e-learning",
+          "Быстрая сдача из домашней студии",
+          "Коммерческий и брендовый VO"
+        ],
+        "stack": [
+          "Домашняя студия / DAW",
+          "Удалённые сессии",
+          "ADR и лип-синк",
+          "Читка с листа"
+        ]
+      }
     },
     "contact": {
-      "heading": "Trabajemos Juntos",
-      "game": "¿Buscas contratar un desarrollador o colaborar en un proyecto? Me encantaría escucharlo.",
-      "voice": "¿Necesitas una voz para tu juego, película o comercial? Creemos algo inolvidable.",
-      "namePlaceholder": "Tu Nombre",
-      "emailPlaceholder": "Tu Email",
-      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
-      "send": "Enviar Mensaje",
-      "success": "¡Mensaje enviado! Te responderé en 24 horas."
+      "heading": "Давайте работать вместе",
+      "game": "Нужен Unity-разработчик или хотите сотрудничать? Пишите.",
+      "voice": "Нужен голос для игры, фильма или рекламы? Свяжитесь со мной.",
+      "emailLabel": "Email",
+      "telegramLabel": "Telegram",
+      "email": "denis.botanov1@gmail.com",
+      "telegram": "@DanBot01"
     },
     "footer": {
-      "rights": "© 2026 Denis Rusin. Todos los derechos reservados.",
-      "madeWith": "Diseñado y programado con cuidado."
-    }
-  },
-  "fr": {
-    "nav": {
-      "about": "À propos",
-      "projects": "Projets",
-      "skills": "Compétences",
-      "contact": "Contact",
-      "switchToVoice": "Comédien VO",
-      "switchToGame": "Dev Jeux"
-    },
-    "hero": {
-      "game": {
-        "greeting": "Bonjour, je suis",
-        "name": "Denis Rusin",
-        "role": "Développeur de Jeux",
-        "tagline": "Forger des mondes immersifs, pixel après pixel.",
-        "sub": "Je crée des jeux qui captivent les joueurs et ne les lâchent pas — des prototypes rapides aux sorties commerciales complètes.",
-        "cta": "Voir Mes Jeux",
-        "ctaSub": "Ou explorer mon travail vocal →"
-      },
-      "voice": {
-        "greeting": "Bonjour, je suis",
-        "name": "Denis Rusin",
-        "role": "Comédien de Doublage",
-        "tagline": "Donner souffle et âme à chaque personnage.",
-        "sub": "Des grands méchants aux narrateurs apaisants, je livre des performances qui restent longtemps après la dernière réplique.",
-        "cta": "Écouter ma Démo",
-        "ctaSub": "Ou explorer mon travail en jeux →"
-      }
-    },
-    "about": {
-      "heading": "À Propos",
-      "game": {
-        "p1": "Je suis développeur de jeux avec 7 ans d'expérience professionnelle sur PC, console et mobile.",
-        "p2": "J'ai travaillé sur tout, des expériences indie en solo aux productions de studio de 15 personnes.",
-        "p3": "Actuellement ouvert à de nouvelles collaborations, contrats freelance et postes à temps plein.",
-        "tag1": "Conception Systèmes",
-        "tag2": "Programmation",
-        "tag3": "Shaders / VFX",
-        "tag4": "Solo & Équipe"
-      },
-      "voice": {
-        "p1": "Comédien de doublage professionnel avec une tessiture de quatre octaves et une formation en théâtre et production audio.",
-        "p2": "Mon studio maison est entièrement traité pour des sessions à distance. Je livre un audio de qualité broadcast rapidement.",
-        "p3": "Disponible pour les personnages, la narration, l'e-learning et le VO commercial.",
-        "tag1": "Large Registre",
-        "tag2": "Studio Maison",
-        "tag3": "Livraison Rapide",
-        "tag4": "Sessions Distantes"
-      }
-    },
-    "projects": {
-      "heading": "Projets",
-      "game": [
-        {
-          "title": "Neon Abyss 2",
-          "desc": "Roguelite de plates-formes dans un monde souterrain baigné de néon. Plus de 200k exemplaires vendus sur Steam.",
-          "tags": [
-            "Unity",
-            "C#",
-            "HLSL",
-            "Steam"
-          ],
-          "year": "2024",
-          "type": "Sortie Commerciale"
-        },
-        {
-          "title": "Siege Protocol",
-          "desc": "Stratégie multijoueur en temps réel avec des environnements destructibles. Construit sous Unreal Engine 5.",
-          "tags": [
-            "Unreal Engine 5",
-            "C++",
-            "Multijoueur",
-            "EOS"
-          ],
-          "year": "2023",
-          "type": "Projet Studio"
-        },
-        {
-          "title": "Chromaveil",
-          "desc": "Jeu de puzzle narratif explorant le deuil à travers des mécaniques de couleur. Vainqueur de game jam.",
-          "tags": [
-            "Godot",
-            "GDScript",
-            "Solo Dev",
-            "Narratif"
-          ],
-          "year": "2022",
-          "type": "Indie"
-        },
-        {
-          "title": "Voidstep Engine",
-          "desc": "Un moteur de jeu 2D personnalisé en C++ avec une architecture ECS et une couche de script Lua.",
-          "tags": [
-            "C++",
-            "OpenGL",
-            "ECS",
-            "Lua"
-          ],
-          "year": "2021",
-          "type": "Open Source"
-        }
-      ],
-      "voice": [
-        {
-          "title": "Ironclad Chronicles",
-          "desc": "Antagoniste principal \"Lord Valen\" dans ce RPG de fantasy de 80 heures. Plus de 12 000 lignes de dialogue.",
-          "tags": [
-            "Jeu Vidéo",
-            "AAA",
-            "Personnage",
-            "Fantasy"
-          ],
-          "year": "2024",
-          "type": "Jeu Vidéo"
-        },
-        {
-          "title": "Galaxy Drift — Livre Audio",
-          "desc": "Narrateur et 14 personnages distincts dans une série de livres audio SF en 9 parties.",
-          "tags": [
-            "Livre Audio",
-            "Narration",
-            "SF",
-            "Prod. Propre"
-          ],
-          "year": "2023",
-          "type": "Série Livre Audio"
-        },
-        {
-          "title": "Midnight Tactics",
-          "desc": "Commandant \"Capitaine Rhys\" dans ce shooter tactique. Session à distance, 6 000 lignes.",
-          "tags": [
-            "Jeu Vidéo",
-            "Tactique",
-            "Personnage",
-            "Distant"
-          ],
-          "year": "2023",
-          "type": "Jeu Vidéo"
-        },
-        {
-          "title": "Campagne TechNova",
-          "desc": "Campagne commerciale nationale pour une fintech. Plus de 40 spots en anglais et espagnol.",
-          "tags": [
-            "Commercial",
-            "Broadcast",
-            "Bilingue",
-            "VO"
-          ],
-          "year": "2022",
-          "type": "Commercial"
-        }
-      ]
-    },
-    "skills": {
-      "heading": "Compétences",
-      "game": [
-        {
-          "name": "Unity / C#",
-          "level": 95
-        },
-        {
-          "name": "Unreal Engine 5 / C++",
-          "level": 88
-        },
-        {
-          "name": "Shaders HLSL / GLSL",
-          "level": 82
-        },
-        {
-          "name": "Godot / GDScript",
-          "level": 78
-        },
-        {
-          "name": "Netcode Multijoueur",
-          "level": 75
-        },
-        {
-          "name": "Blender 3D",
-          "level": 70
-        },
-        {
-          "name": "Python / Tools",
-          "level": 85
-        },
-        {
-          "name": "Git",
-          "level": 92
-        }
-      ],
-      "voice": [
-        {
-          "name": "Jeu de Personnages",
-          "level": 97
-        },
-        {
-          "name": "VO Publicitaire",
-          "level": 93
-        },
-        {
-          "name": "Narration",
-          "level": 90
-        },
-        {
-          "name": "Animation",
-          "level": 85
-        },
-        {
-          "name": "ADR / Doublage",
-          "level": 80
-        },
-        {
-          "name": "Production Audio",
-          "level": 82
-        },
-        {
-          "name": "Espagnol (Bilingue)",
-          "level": 88
-        },
-        {
-          "name": "Lecture à Vue",
-          "level": 94
-        }
-      ]
-    },
-    "contact": {
-      "heading": "Travaillons Ensemble",
-      "game": "Vous cherchez à embaucher un développeur ou à collaborer ? J'adorerais en entendre parler.",
-      "voice": "Besoin d'une voix pour votre jeu, film ou commercial ? Créons quelque chose d'inoubliable.",
-      "namePlaceholder": "Votre Nom",
-      "emailPlaceholder": "Votre Email",
-      "messagePlaceholder": "Parlez-moi de votre projet...",
-      "send": "Envoyer",
-      "success": "Message envoyé ! Je vous répondrai dans les 24 heures."
-    },
-    "footer": {
-      "rights": "© 2026 Denis Rusin. Tous droits réservés.",
-      "madeWith": "Conçu et codé avec soin."
-    }
-  },
-  "ja": {
-    "nav": {
-      "about": "自己紹介",
-      "projects": "プロジェクト",
-      "skills": "スキル",
-      "contact": "お問合せ",
-      "switchToVoice": "声優",
-      "switchToGame": "ゲーム開発"
-    },
-    "hero": {
-      "game": {
-        "greeting": "こんにちは、",
-        "name": "Denis Rusin",
-        "role": "ゲーム開発者",
-        "tagline": "一ピクセルずつ、没入感あふれる世界を作る。",
-        "sub": "プレイヤーを引き込み、離さないゲームを作り続けています。プロトタイプから商業リリースまで。",
-        "cta": "ゲームを見る",
-        "ctaSub": "声優の仕事を見る →"
-      },
-      "voice": {
-        "greeting": "こんにちは、",
-        "name": "Denis Rusin",
-        "role": "声優",
-        "tagline": "すべてのキャラクターに息吹と魂を。",
-        "sub": "凶悪な悪役から穏やかなナレーターまで、最後のセリフの後も長く残る演技を届けます。",
-        "cta": "デモを聴く",
-        "ctaSub": "ゲーム開発の仕事を見る →"
-      }
-    },
-    "about": {
-      "heading": "自己紹介",
-      "game": {
-        "p1": "ゲーム開発者として7年の実務経験を持ち、PC・コンソール・モバイル向けタイトルをリリースしてきました。",
-        "p2": "個人インディーゲームから15人規模のスタジオ制作まで、幅広く経験しています。",
-        "p3": "新たなコラボレーション、フリーランス契約、フルタイムのポジションを歓迎します。",
-        "tag1": "システム設計",
-        "tag2": "ゲームプログラミング",
-        "tag3": "シェーダー / VFX",
-        "tag4": "個人 & チーム"
-      },
-      "voice": {
-        "p1": "4オクターブの音域を持つプロの声優で、演劇と音声制作のバックグラウンドを持ちます。",
-        "p2": "自宅スタジオは完全に防音処理済みで、リモートセッションに対応しています。",
-        "p3": "キャラクター、ナレーション、e-ラーニング、コマーシャルVOに対応可能です。",
-        "tag1": "幅広いキャラクター",
-        "tag2": "自宅スタジオ",
-        "tag3": "迅速な納品",
-        "tag4": "リモートセッション"
-      }
-    },
-    "projects": {
-      "heading": "プロジェクト",
-      "game": [
-        {
-          "title": "Neon Abyss 2",
-          "desc": "ネオンに染まった地下世界を舞台にしたローグライトアクション。Steamで20万本以上販売。",
-          "tags": [
-            "Unity",
-            "C#",
-            "HLSL",
-            "Steam"
-          ],
-          "year": "2024",
-          "type": "商業リリース"
-        },
-        {
-          "title": "Siege Protocol",
-          "desc": "壊せる地形を持つリアルタイム多人数戦略ゲーム。Unreal Engine 5で制作。",
-          "tags": [
-            "UE5",
-            "C++",
-            "マルチプレイヤー",
-            "EOS"
-          ],
-          "year": "2023",
-          "type": "スタジオプロジェクト"
-        },
-        {
-          "title": "Chromaveil",
-          "desc": "カラーメカニクスで悲しみを探るナラティブパズルゲーム。ゲームジャム優勝作品。",
-          "tags": [
-            "Godot",
-            "GDScript",
-            "個人開発",
-            "ナラティブ"
-          ],
-          "year": "2022",
-          "type": "インディー"
-        },
-        {
-          "title": "Voidstep Engine",
-          "desc": "ECSアーキテクチャとLuaスクリプト層を持つカスタム2Dゲームエンジン。",
-          "tags": [
-            "C++",
-            "OpenGL",
-            "ECS",
-            "Lua"
-          ],
-          "year": "2021",
-          "type": "オープンソース"
-        }
-      ],
-      "voice": [
-        {
-          "title": "Ironclad Chronicles",
-          "desc": "80時間のファンタジーRPGで主要悪役\"ロード・ヴェイレン\"を担当。12,000行以上のセリフ。",
-          "tags": [
-            "ビデオゲーム",
-            "AAA",
-            "キャラクター",
-            "ファンタジー"
-          ],
-          "year": "2024",
-          "type": "ビデオゲーム"
-        },
-        {
-          "title": "Galaxy Drift — 朗読",
-          "desc": "9部構成のSFオーディオブックシリーズでナレーターと14の異なるキャラクターを担当。",
-          "tags": [
-            "朗読",
-            "ナレーション",
-            "SF",
-            "自主制作"
-          ],
-          "year": "2023",
-          "type": "オーディオブック"
-        },
-        {
-          "title": "Midnight Tactics",
-          "desc": "タクティカルシューターで隊長\"ライス大尉\"を担当。リモート録音、6,000行。",
-          "tags": [
-            "ビデオゲーム",
-            "タクティカル",
-            "キャラクター",
-            "リモート"
-          ],
-          "year": "2023",
-          "type": "ビデオゲーム"
-        },
-        {
-          "title": "TechNovaキャンペーン",
-          "desc": "フィンテックスタートアップの全国CMキャンペーン。英語・スペイン語で40本以上のスポット収録。",
-          "tags": [
-            "CM",
-            "放送",
-            "バイリンガル",
-            "VO"
-          ],
-          "year": "2022",
-          "type": "コマーシャル"
-        }
-      ]
-    },
-    "skills": {
-      "heading": "スキル",
-      "game": [
-        {
-          "name": "Unity / C#",
-          "level": 95
-        },
-        {
-          "name": "Unreal Engine 5 / C++",
-          "level": 88
-        },
-        {
-          "name": "HLSL / GLSL シェーダー",
-          "level": 82
-        },
-        {
-          "name": "Godot / GDScript",
-          "level": 78
-        },
-        {
-          "name": "マルチプレイヤーNetcode",
-          "level": 75
-        },
-        {
-          "name": "Blender 3D",
-          "level": 70
-        },
-        {
-          "name": "Python / ツール開発",
-          "level": 85
-        },
-        {
-          "name": "Git",
-          "level": 92
-        }
-      ],
-      "voice": [
-        {
-          "name": "キャラクター演技",
-          "level": 97
-        },
-        {
-          "name": "コマーシャルVO",
-          "level": 93
-        },
-        {
-          "name": "ナレーション",
-          "level": 90
-        },
-        {
-          "name": "アニメーション",
-          "level": 85
-        },
-        {
-          "name": "ADR / 吹き替え",
-          "level": 80
-        },
-        {
-          "name": "オーディオ制作",
-          "level": 82
-        },
-        {
-          "name": "スペイン語（バイリンガル）",
-          "level": 88
-        },
-        {
-          "name": "初見読み",
-          "level": 94
-        }
-      ]
-    },
-    "contact": {
-      "heading": "ご一緒に",
-      "game": "ゲーム開発者を探している、またはプロジェクトで協力したい方はぜひご連絡ください。",
-      "voice": "ゲーム・映像・CMに声が必要な方、忘れられない何かを一緒に作りましょう。",
-      "namePlaceholder": "お名前",
-      "emailPlaceholder": "メールアドレス",
-      "messagePlaceholder": "プロジェクトについて教えてください...",
-      "send": "送信する",
-      "success": "メッセージを受け取りました！24時間以内にご返信します。"
-    },
-    "footer": {
-      "rights": "© 2026 Denis Rusin. All rights reserved.",
-      "madeWith": "丁寧に設計・実装しました。"
+      "rights": "© 2026 Денис Русин. Все права защищены.",
+      "madeWith": "Разработано с душой."
     }
   }
 }

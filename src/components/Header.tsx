@@ -1,20 +1,15 @@
-import { useState, type CSSProperties, type ReactNode } from "react";
-import { ChevronDown, Gamepad2, Menu, MicVocal, X } from "lucide-react";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Gamepad2, Menu, MicVocal, X } from "lucide-react";
 import { langLabels, site } from "../config/site";
 import { getAccent, scrollToSection } from "../lib/theme";
-import type { Language, PortfolioMode } from "../types";
+import type { Language, LocaleContent, PortfolioMode } from "../types";
 
 interface HeaderProps {
   mode: PortfolioMode;
   lang: Language;
-  labels: {
-    about: string;
-    projects: string;
-    skills: string;
-    contact: string;
-    switchToVoice: string;
-    switchToGame: string;
-  };
+  labels: LocaleContent["nav"];
+  modeSwitcher: LocaleContent["modeSwitcher"];
   onModeChange: (mode: PortfolioMode) => void;
   onLangChange: (lang: Language) => void;
 }
@@ -30,12 +25,12 @@ export function Header({
   mode,
   lang,
   labels,
+  modeSwitcher,
   onModeChange,
   onLangChange,
 }: HeaderProps) {
   const accent = getAccent(mode);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [langOpen, setLangOpen] = useState(false);
 
   const navigate = (href: string) => {
     scrollToSection(href);
@@ -43,325 +38,262 @@ export function Header({
   };
 
   return (
-    <header
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 50,
-        background: "rgba(8,8,11,0.85)",
-        backdropFilter: "blur(20px)",
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
-      }}
-    >
-      <nav
+    <header style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 50 }}>
+      <div
         style={{
-          maxWidth: 1200,
-          margin: "0 auto",
-          padding: "0 24px",
-          height: 64,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: 16,
+          background: "rgba(8,8,11,0.9)",
+          backdropFilter: "blur(20px)",
+          borderBottom: "1px solid rgba(255,255,255,0.06)",
         }}
       >
-        <a
-          href="#hero"
-          onClick={(e) => {
-            e.preventDefault();
-            navigate("#hero");
-          }}
-          style={{
-            fontFamily: "var(--font-display)",
-            fontSize: 20,
-            fontWeight: 700,
-            letterSpacing: "0.05em",
-            color: "#f0f0f5",
-            textDecoration: "none",
-            display: "flex",
-            alignItems: "center",
-            gap: 8,
-            flexShrink: 0,
-          }}
-        >
-          <span style={{ color: accent.main }}>{site.initials}</span>
-          <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 300 }}>|</span>
-          <span
-            style={{
-              fontSize: 13,
-              fontWeight: 400,
-              color: "#8888a0",
-              letterSpacing: "0.12em",
-              textTransform: "uppercase",
-            }}
-          >
-            {mode === "game" ? "Game Dev" : "Voice Actor"}
-          </span>
-        </a>
-
         <div
-          className="hidden-mobile"
           style={{
+            maxWidth: 1200,
+            margin: "0 auto",
+            padding: "0 24px",
+            height: 56,
             display: "flex",
             alignItems: "center",
-            gap: 32,
-            flex: 1,
-            justifyContent: "center",
+            justifyContent: "space-between",
           }}
         >
-          {navItems.map((item) => (
-            <button
-              key={item.href}
-              type="button"
-              onClick={() => navigate(item.href)}
-              style={navButtonStyle}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.color = "#f0f0f5";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.color = "#8888a0";
-              }}
-            >
-              {labels[item.key]}
-            </button>
-          ))}
-        </div>
-
-        <div style={{ display: "flex", alignItems: "center", gap: 12, flexShrink: 0 }}>
-          <div
-            className="hidden-mobile"
-            style={{
-              display: "flex",
-              alignItems: "center",
-              background: "#0f0f14",
-              border: "1px solid rgba(255,255,255,0.07)",
-              borderRadius: 999,
-              padding: 3,
-              gap: 2,
-            }}
-          >
-            <ModeButton
-              active={mode === "game"}
-              color="#e53535"
-              onClick={() => onModeChange("game")}
-              icon={<Gamepad2 size={13} />}
-              label={labels.switchToGame}
-            />
-            <ModeButton
-              active={mode === "voice"}
-              color="#2563eb"
-              onClick={() => onModeChange("voice")}
-              icon={<MicVocal size={13} />}
-              label="Voice"
-            />
-          </div>
-
-          <div style={{ position: "relative" }}>
-            <button
-              type="button"
-              onClick={() => setLangOpen((o) => !o)}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 4,
-                background: "#0f0f14",
-                border: "1px solid rgba(255,255,255,0.07)",
-                borderRadius: 6,
-                padding: "6px 10px",
-                color: "#f0f0f5",
-                fontSize: 12,
-                fontWeight: 600,
-                cursor: "pointer",
-                fontFamily: "var(--font-mono)",
-                letterSpacing: "0.06em",
-              }}
-            >
-              {langLabels[lang]}
-              <ChevronDown size={11} style={{ opacity: 0.5 }} />
-            </button>
-            {langOpen && (
-              <div
-                style={{
-                  position: "absolute",
-                  top: "calc(100% + 6px)",
-                  right: 0,
-                  background: "#0f0f14",
-                  border: "1px solid rgba(255,255,255,0.1)",
-                  borderRadius: 8,
-                  overflow: "hidden",
-                  minWidth: 80,
-                  zIndex: 100,
-                }}
-              >
-                {(Object.keys(langLabels) as Language[]).map((code) => (
-                  <button
-                    key={code}
-                    type="button"
-                    onClick={() => {
-                      onLangChange(code);
-                      setLangOpen(false);
-                    }}
-                    style={{
-                      display: "block",
-                      width: "100%",
-                      textAlign: "left",
-                      padding: "8px 14px",
-                      background: lang === code ? accent.dim : "transparent",
-                      border: "none",
-                      color: lang === code ? accent.main : "#8888a0",
-                      fontSize: 12,
-                      fontWeight: 600,
-                      cursor: "pointer",
-                      fontFamily: "var(--font-mono)",
-                    }}
-                  >
-                    {langLabels[code]}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
           <button
             type="button"
-            className="show-mobile"
-            onClick={() => setMobileOpen((o) => !o)}
+            onClick={() => navigate("#hero")}
             style={{
               background: "none",
               border: "none",
+              fontFamily: "var(--font-display)",
+              fontSize: 18,
+              fontWeight: 800,
+              letterSpacing: "0.06em",
               color: "#f0f0f5",
               cursor: "pointer",
-              padding: 4,
-              display: "none",
+              padding: 0,
+              flexShrink: 0,
             }}
-            aria-label="Menu"
           >
-            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+            <span style={{ color: accent.main, transition: "color 0.4s" }}>{site.initials}</span>
           </button>
-        </div>
-      </nav>
 
-      {mobileOpen && (
-        <div
-          style={{
-            background: "#0f0f14",
-            borderTop: "1px solid rgba(255,255,255,0.06)",
-            padding: "16px 24px 24px",
-          }}
-        >
-          {navItems.map((item) => (
-            <button
-              key={item.href}
-              type="button"
-              onClick={() => navigate(item.href)}
+          <nav className="hide-mobile" style={{ display: "flex", alignItems: "center", gap: 28 }}>
+            {navItems.map((item) => (
+              <button
+                key={item.href}
+                type="button"
+                onClick={() => navigate(item.href)}
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: "#6a6a82",
+                  fontSize: 13,
+                  letterSpacing: "0.08em",
+                  textTransform: "uppercase",
+                  cursor: "pointer",
+                  padding: "4px 0",
+                  fontFamily: "var(--font-mono)",
+                  transition: "color 0.2s",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = "#f0f0f5";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = "#6a6a82";
+                }}
+              >
+                {labels[item.key]}
+              </button>
+            ))}
+          </nav>
+
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <div
               style={{
-                ...navButtonStyle,
-                display: "block",
-                width: "100%",
-                textAlign: "left",
-                padding: "12px 0",
-                fontSize: 16,
-              }}
-            >
-              {labels[item.key]}
-            </button>
-          ))}
-          <div style={{ display: "flex", gap: 8, marginTop: 16 }}>
-            <button
-              type="button"
-              onClick={() => {
-                onModeChange("game");
-                setMobileOpen(false);
-              }}
-              style={{
-                flex: 1,
-                padding: "10px",
+                display: "flex",
+                background: "#111118",
+                border: "1px solid rgba(255,255,255,0.1)",
                 borderRadius: 8,
-                border: "none",
-                cursor: "pointer",
-                fontWeight: 600,
-                background: mode === "game" ? "#e53535" : "#1a1a22",
-                color: mode === "game" ? "#fff" : "#8888a0",
+                overflow: "hidden",
               }}
             >
-              {labels.switchToGame}
-            </button>
+              {(Object.keys(langLabels) as Language[]).map((code) => (
+                <button
+                  key={code}
+                  type="button"
+                  onClick={() => onLangChange(code)}
+                  style={{
+                    padding: "6px 14px",
+                    border: "none",
+                    cursor: "pointer",
+                    fontSize: 12,
+                    fontWeight: 700,
+                    letterSpacing: "0.1em",
+                    fontFamily: "var(--font-mono)",
+                    transition: "all 0.2s",
+                    background: lang === code ? accent.main : "transparent",
+                    color: lang === code ? "#fff" : "#55556a",
+                  }}
+                >
+                  {langLabels[code]}
+                </button>
+              ))}
+            </div>
+
             <button
               type="button"
-              onClick={() => {
-                onModeChange("voice");
-                setMobileOpen(false);
-              }}
+              className="show-mobile"
+              onClick={() => setMobileOpen((o) => !o)}
               style={{
-                flex: 1,
-                padding: "10px",
-                borderRadius: 8,
+                background: "none",
                 border: "none",
+                color: "#f0f0f5",
                 cursor: "pointer",
-                fontWeight: 600,
-                background: mode === "voice" ? "#2563eb" : "#1a1a22",
-                color: mode === "voice" ? "#fff" : "#8888a0",
+                padding: 4,
+                display: "none",
               }}
+              aria-label="Menu"
             >
-              Voice
+              {mobileOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>
-      )}
+      </div>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          background: "rgba(6,6,9,0.96)",
+          backdropFilter: "blur(20px)",
+          borderBottom: "1px solid rgba(255,255,255,0.05)",
+        }}
+      >
+        <button
+          type="button"
+          onClick={() => onModeChange("game")}
+          style={{
+            position: "relative",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 10,
+            padding: "13px 0",
+            border: "none",
+            cursor: "pointer",
+            fontFamily: "var(--font-display)",
+            fontSize: 14,
+            fontWeight: 700,
+            letterSpacing: "0.1em",
+            textTransform: "uppercase",
+            transition: "all 0.3s",
+            background:
+              mode === "game"
+                ? "linear-gradient(135deg, rgba(229,53,53,0.18) 0%, rgba(229,53,53,0.06) 100%)"
+                : "transparent",
+            color: mode === "game" ? "#e53535" : "#44445a",
+            borderRight: "1px solid rgba(255,255,255,0.05)",
+          }}
+        >
+          <Gamepad2 size={16} />
+          <span className="hide-tiny">{modeSwitcher.game}</span>
+          {mode === "game" && (
+            <motion.div
+              layoutId="mode-indicator"
+              style={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                right: 0,
+                height: 2,
+                background: "#e53535",
+                boxShadow: "0 0 12px rgba(229,53,53,0.6)",
+              }}
+            />
+          )}
+        </button>
+
+        <button
+          type="button"
+          onClick={() => onModeChange("voice")}
+          style={{
+            position: "relative",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 10,
+            padding: "13px 0",
+            border: "none",
+            cursor: "pointer",
+            fontFamily: "var(--font-display)",
+            fontSize: 14,
+            fontWeight: 700,
+            letterSpacing: "0.1em",
+            textTransform: "uppercase",
+            transition: "all 0.3s",
+            background:
+              mode === "voice"
+                ? "linear-gradient(135deg, rgba(37,99,235,0.18) 0%, rgba(37,99,235,0.06) 100%)"
+                : "transparent",
+            color: mode === "voice" ? "#2563eb" : "#44445a",
+          }}
+        >
+          <MicVocal size={16} />
+          <span className="hide-tiny">{modeSwitcher.voice}</span>
+          {mode === "voice" && (
+            <motion.div
+              layoutId="mode-indicator"
+              style={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                right: 0,
+                height: 2,
+                background: "#2563eb",
+                boxShadow: "0 0 12px rgba(37,99,235,0.6)",
+              }}
+            />
+          )}
+        </button>
+      </div>
+
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2 }}
+            style={{
+              overflow: "hidden",
+              background: "rgba(8,8,11,0.98)",
+              borderBottom: "1px solid rgba(255,255,255,0.06)",
+            }}
+          >
+            <div style={{ padding: "12px 24px 16px", display: "flex", flexDirection: "column", gap: 2 }}>
+              {navItems.map((item) => (
+                <button
+                  key={item.href}
+                  type="button"
+                  onClick={() => navigate(item.href)}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: "#c0c0d0",
+                    fontSize: 15,
+                    textAlign: "left",
+                    padding: "10px 0",
+                    cursor: "pointer",
+                    borderBottom: "1px solid rgba(255,255,255,0.04)",
+                    fontFamily: "var(--font-body)",
+                  }}
+                >
+                  {labels[item.key]}
+                </button>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
-  );
-}
-
-const navButtonStyle: CSSProperties = {
-  background: "none",
-  border: "none",
-  color: "#8888a0",
-  fontSize: 14,
-  letterSpacing: "0.06em",
-  cursor: "pointer",
-  padding: "4px 0",
-  transition: "color 0.2s",
-  fontFamily: "var(--font-body)",
-};
-
-function ModeButton({
-  active,
-  color,
-  onClick,
-  icon,
-  label,
-}: {
-  active: boolean;
-  color: string;
-  onClick: () => void;
-  icon: ReactNode;
-  label: string;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: 6,
-        padding: "5px 12px",
-        borderRadius: 999,
-        border: "none",
-        cursor: "pointer",
-        fontSize: 12,
-        fontWeight: 600,
-        letterSpacing: "0.05em",
-        fontFamily: "var(--font-display)",
-        transition: "all 0.25s",
-        background: active ? color : "transparent",
-        color: active ? "#fff" : "#8888a0",
-      }}
-    >
-      {icon}
-      {label}
-    </button>
   );
 }

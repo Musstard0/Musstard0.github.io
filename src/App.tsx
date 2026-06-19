@@ -30,10 +30,11 @@ export default function App() {
         mode={mode}
         lang={lang}
         labels={t.nav}
+        modeSwitcher={t.modeSwitcher}
         onModeChange={setMode}
         onLangChange={setLang}
       />
-      <main>
+      <main style={{ paddingTop: 104 }}>
         <Hero mode={mode} content={t.hero[mode]} onModeSwitch={toggleMode} />
         <About mode={mode} content={t.about} />
         <Projects mode={mode} content={t.projects} />

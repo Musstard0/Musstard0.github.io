@@ -148,7 +148,7 @@ export function Hero({ mode, content, onModeSwitch }: HeroProps) {
           zIndex: 2,
           maxWidth: 1200,
           margin: "0 auto",
-          padding: "120px 24px 80px",
+          padding: "140px 24px 80px",
           width: "100%",
         }}
       >

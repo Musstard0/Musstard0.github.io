@@ -3,18 +3,36 @@ import type { langLabels } from "../config/site";
 export type PortfolioMode = "game" | "voice";
 export type Language = keyof typeof langLabels;
 
+export type ProjectLinkType =
+  | "steam"
+  | "youtube"
+  | "itch"
+  | "github"
+  | "playmarket"
+  | "appstore"
+  | "tiktok"
+  | "web";
+
+export interface ProjectLink {
+  type: ProjectLinkType;
+  url: string;
+}
+
 export interface Project {
   title: string;
   desc: string;
   tags: string[];
-  year: string;
+  year?: string;
+  downloads?: string;
   type: string;
-  url?: string;
+  link?: ProjectLink;
+  links?: ProjectLink[];
+  details: string[];
 }
 
-export interface Skill {
-  name: string;
-  level: number;
+export interface SkillsColumn {
+  strengths: string[];
+  stack: string[];
 }
 
 export interface HeroContent {
@@ -43,8 +61,10 @@ export interface LocaleContent {
     projects: string;
     skills: string;
     contact: string;
-    switchToVoice: string;
-    switchToGame: string;
+  };
+  modeSwitcher: {
+    game: string;
+    voice: string;
   };
   hero: Record<PortfolioMode, HeroContent>;
   about: {
@@ -54,23 +74,26 @@ export interface LocaleContent {
   };
   projects: {
     heading: string;
+    whatIDid: string;
+    downloadsLabel: string;
     game: Project[];
     voice: Project[];
   };
   skills: {
     heading: string;
-    game: Skill[];
-    voice: Skill[];
+    strengthsLabel: string;
+    stackLabel: string;
+    game: SkillsColumn;
+    voice: SkillsColumn;
   };
   contact: {
     heading: string;
     game: string;
     voice: string;
-    namePlaceholder: string;
-    emailPlaceholder: string;
-    messagePlaceholder: string;
-    send: string;
-    success: string;
+    emailLabel: string;
+    telegramLabel: string;
+    email: string;
+    telegram: string;
   };
   footer: {
     rights: string;

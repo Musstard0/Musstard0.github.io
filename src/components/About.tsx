@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Gamepad2, MicVocal } from "lucide-react";
+import photoUrl from "../content/Photo.jpg";
 import { aboutImages } from "../lib/images";
 import { getAccent } from "../lib/theme";
 import type { LocaleContent, PortfolioMode } from "../types";
@@ -13,6 +13,7 @@ export function About({ mode, content }: AboutProps) {
   const accent = getAccent(mode);
   const copy = mode === "game" ? content.game : content.voice;
   const tags = [copy.tag1, copy.tag2, copy.tag3, copy.tag4];
+  const imageSrc = mode === "game" ? photoUrl : aboutImages.voice;
 
   return (
     <section id="about" style={{ padding: "100px 24px", maxWidth: 1200, margin: "0 auto" }}>
@@ -40,13 +41,13 @@ export function About({ mode, content }: AboutProps) {
             }}
           >
             <img
-              src={aboutImages[mode]}
-              alt={mode === "game" ? "Game development setup" : "Voice recording setup"}
+              src={imageSrc}
+              alt={mode === "game" ? "Denis Rusin" : "Voice recording setup"}
               style={{
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
-                filter: "brightness(0.7) saturate(0.8)",
+                filter: mode === "game" ? "brightness(0.92) saturate(0.95)" : "brightness(0.7) saturate(0.8)",
               }}
             />
             <div
@@ -59,33 +60,6 @@ export function About({ mode, content }: AboutProps) {
                 background: accent.main,
               }}
             />
-          </div>
-          <div
-            style={{
-              position: "absolute",
-              top: -20,
-              right: -20,
-              background: accent.main,
-              color: "#fff",
-              borderRadius: 12,
-              padding: "12px 18px",
-              display: "flex",
-              alignItems: "center",
-              gap: 8,
-              boxShadow: `0 8px 32px ${accent.dim}`,
-            }}
-          >
-            {mode === "game" ? <Gamepad2 size={18} /> : <MicVocal size={18} />}
-            <span
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: 13,
-                fontWeight: 700,
-                letterSpacing: "0.08em",
-              }}
-            >
-              {mode === "game" ? "7 YRS EXP" : "PRO VO"}
-            </span>
           </div>
         </div>
 
