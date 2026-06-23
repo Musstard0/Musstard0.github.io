@@ -15,8 +15,8 @@
         "greeting": "Hello, I'm",
         "name": "Denis Rusin",
         "role": "Unity Developer",
-        "tagline": "4+ years in C# and Unity across mobile, PC, and web platforms.",
-        "sub": "Systems architecture, optimization, and game porting. From idea to store release.",
+        "tagline": "C# and Unity across mobile, PC, and web platforms.",
+        "sub": "Software architecture, optimization, and game porting. From idea to store release.",
         "cta": "View My Games",
         "ctaSub": "Switch to voice actor portfolio →"
       },
@@ -34,9 +34,10 @@
       "heading": "About Me",
       "game": {
         "p1": "Over 4 years of commercial Unity game development. I've worked on mobile and PC projects, both in teams and solo.",
-        "p2": "Full-cycle experience — from early prototypes to release builds and live product support. Main focus: gameplay systems, architecture, and keeping the codebase stable.",
-        "p3": "Comfortable with optimization, mechanics integration, and performance work. Used to team development and production requirements.",
-        "tag1": "Systems & Architecture",
+        "p2": "Experience in game porting and full-cycle development — from MVP creation and gameplay mechanics to store releases and ongoing support.",
+        "p3": "Focused on gameplay systems and production development in team environments. I work closely with game designers and producers, prioritizing clear and maintainable codebase solutions.",
+        "p4": "Beyond game development, I do voice acting and create content on YouTube and TikTok, which gives me additional insight into how users perceive products.",
+        "tag1": "Software Architecture",
         "tag2": "Mobile Optimization",
         "tag3": "Game Design",
         "tag4": "Documentation"
@@ -53,6 +54,7 @@
     },
     "projects": {
       "heading": "Projects",
+      "period": "",
       "whatIDid": "What I did",
       "downloadsLabel": "downloads",
       "game": [
@@ -89,7 +91,7 @@
             "Mobile",
             "Sandbox"
           ],
-          "year": "2025",
+          "year": "2025–2026",
           "downloads": "100k+",
           "type": "Mobile — Lead",
           "links": [
@@ -99,7 +101,7 @@
             }
           ],
           "details": [
-            "Rebuilt the architecture of a legacy mobile project in one month — final build size reduced 3×.",
+            "Rebuilt the software architecture of a legacy mobile project in one month — final build size reduced 3×.",
             "Crash-free sessions improved from 68% to 99.2%.",
             "In-game phone UI with browser and 6 mini-apps — HUD and apps shipped in one week.",
             "Vehicle customization: bass-reactive audio, hydraulics, tinting, interior lighting, and visual mods.",
@@ -114,7 +116,7 @@
             "Solo",
             "Mobile"
           ],
-          "year": "2025",
+          "year": "2026",
           "downloads": "50k+",
           "type": "Solo Release",
           "links": [
@@ -132,30 +134,6 @@
             "Mobile optimization: snow/mud shaders and stable 60 FPS on high settings on low-end devices.",
             "Editor tools to speed up production (terrain chunking, vehicle setup tools, etc.).",
             "For iOS: full UI rework in two days; complete tutorial built from scratch in one week."
-          ]
-        },
-        {
-          "title": "Pouch Popper",
-          "desc": "Brand promo mini-game — scan a QR code on packaging, play, and earn rewards.",
-          "tags": [
-            "Vue",
-            "Next.js",
-            "TypeScript",
-            "Promo"
-          ],
-          "year": "2024",
-          "type": "Web — Promo",
-          "links": [
-            {
-              "type": "web",
-              "url": "https://ministryofsnus.com/#"
-            }
-          ],
-          "details": [
-            "Web promo game tied to QR codes on product packaging.",
-            "Stack: Vue.js, TypeScript, and Next.js.",
-            "Built an admin panel on Forest Admin for campaign management.",
-            "Short turnaround from concept to live launch."
           ]
         },
         {
@@ -210,6 +188,30 @@
           "details": [
             "Helped with mobile porting and bugfixes as a junior programmer.",
             "Android and iOS — UI, performance, and platform requirements."
+          ]
+        },
+        {
+          "title": "Pouch Popper",
+          "desc": "Brand promo mini-game — scan a QR code on packaging, play, and earn rewards.",
+          "tags": [
+            "Vue",
+            "Next.js",
+            "TypeScript",
+            "Promo"
+          ],
+          "year": "2024",
+          "type": "Web — Promo",
+          "links": [
+            {
+              "type": "web",
+              "url": "https://ministryofsnus.com/#"
+            }
+          ],
+          "details": [
+            "Web promo game tied to QR codes on product packaging.",
+            "Stack: Vue.js, TypeScript, and Next.js.",
+            "Built an admin panel on Forest Admin for campaign management.",
+            "Short turnaround from concept to live launch."
           ]
         },
         {
@@ -379,7 +381,7 @@
       "game": {
         "strengths": [
           "Game optimization — Unity Profiler, memory and object pooling, Addressables, draw-call batching, LOD and texture atlases, shader tuning, build-size reduction",
-          "Clean architecture — separation of concerns, interfaces and loose coupling, incremental refactoring without breaking live content",
+          "Clean software architecture — separation of concerns, interfaces and loose coupling, incremental refactoring without breaking live content",
           "Core mechanics, custom shaders, and editor tools that speed up production",
           "Shipping projects from idea to release",
           "Team coordination — 2D/3D artists and testers; documentation in Jira/ClickUp, etc."
@@ -439,8 +441,8 @@
         "greeting": "Привет, я",
         "name": "Денис Русин",
         "role": "Unity-разработчик",
-        "tagline": "4+ лет в C# и Unity на мобильных, PC и web платформах.",
-        "sub": "Архитектура систем, оптимизация и портирование игр. Разработка от идеи до релиза в стор.",
+        "tagline": "C# и Unity на мобильных, PC и web платформах.",
+        "sub": "Архитектура ПО, оптимизация и портирование игр. Разработка от идеи до релиза в стор.",
         "cta": "Смотреть игры",
         "ctaSub": "Перейти к портфолио актёра озвучки →"
       },
@@ -457,10 +459,11 @@
     "about": {
       "heading": "Обо мне",
       "game": {
-        "p1": "Более 4 лет занимаюсь коммерческой разработкой игр на Unity. Участвовал в мобильных и PC-проектах, работал в командах и самостоятельно.",
-        "p2": "Имею опыт полного цикла разработки — от ранних прототипов до релизных билдов и поддержки продукта. Основной фокус — разработка геймплейных систем, архитектура и поддержка стабильной кодовой базы.",
-        "p3": "Уверенно работаю с задачами оптимизации, интеграции механик и улучшения производительности. Привык к командной разработке и требованиям продакшена.",
-        "tag1": "Архитектура",
+        "p1": "Более 4 лет занимаюсь коммерческой разработкой игр на Unity. Работал над мобильными и PC-проектами как в командах, так и самостоятельно.",
+        "p2": "Участвовал в портировании игр и полном цикле разработки — от создания MVP и реализации игровых механик до релизов в сторах и последующей поддержки.",
+        "p3": "Фокусируюсь на геймплейных системах и продакшен-разработке в условиях командной работы. Работаю в тесной связке с геймдизайнерами и продюсерами, придерживаясь понятных и поддерживаемых решений в кодовой базе.",
+        "p4": "Помимо разработки игр занимаюсь озвучкой и созданием контента на YouTube и TikTok, что даёт дополнительное понимание работы с пользовательским восприятием продукта.",
+        "tag1": "Архитектура ПО",
         "tag2": "Оптимизация",
         "tag3": "Геймдизайн",
         "tag4": "Документация"
@@ -477,6 +480,7 @@
     },
     "projects": {
       "heading": "Проекты",
+      "period": "",
       "whatIDid": "Что я делал",
       "downloadsLabel": "загрузок",
       "game": [
@@ -513,7 +517,7 @@
             "Mobile",
             "Sandbox"
           ],
-          "year": "2025",
+          "year": "2025–2026",
           "downloads": "100k+",
           "type": "Мобильная — лид",
           "links": [
@@ -523,7 +527,7 @@
             }
           ],
           "details": [
-            "Переписал архитектуру легаси-проекта за месяц — размер финальной сборки сократился в 3 раза.",
+            "Переписал архитектуру ПО легаси-проекта за месяц — размер финальной сборки сократился в 3 раза.",
             "Стабильность сессий: доля без крашей выросла с 68% до 99,2%.",
             "Внутриигровой телефон с браузером и 6 мини-приложениями — HUD и приложения за неделю.",
             "Кастомизация авто: звук с реакцией на бас, гидравлика, тонировка, подсветка салона.",
@@ -538,7 +542,7 @@
             "Solo",
             "Mobile"
           ],
-          "year": "2025",
+          "year": "2026",
           "downloads": "50k+",
           "type": "Соло-релиз",
           "links": [
@@ -556,30 +560,6 @@
             "Оптимизация под слабые устройства: шейдеры снега/грязи, стабильные 60 FPS на высоких настройках.",
             "Инструменты редактора для ускорения продакшна (нарезка террейна на чанки, сетап машин и пр.).",
             "Для iOS за 2 дня полностью переделан UI; за неделю — полноценный обучающий туториал."
-          ]
-        },
-        {
-          "title": "Pouch Popper",
-          "desc": "Промо мини-игра — сканируй QR на упаковке, играй и получай бонусы.",
-          "tags": [
-            "Vue",
-            "Next.js",
-            "TypeScript",
-            "Promo"
-          ],
-          "year": "2024",
-          "type": "Web — промо",
-          "links": [
-            {
-              "type": "web",
-              "url": "https://ministryofsnus.com/#"
-            }
-          ],
-          "details": [
-            "Веб-промо с QR-кодами на упаковке продукта.",
-            "Стек: Vue.js, TypeScript и Next.js.",
-            "Админка на Forest Admin для управления кампанией.",
-            "Короткий цикл от концепта до запуска."
           ]
         },
         {
@@ -634,6 +614,30 @@
           "details": [
             "Помогал в портировании на мобильные и чинил баги на позиции junior-программиста.",
             "Android и iOS — UI, производительность, требования платформ."
+          ]
+        },
+        {
+          "title": "Pouch Popper",
+          "desc": "Промо мини-игра — сканируй QR на упаковке, играй и получай бонусы.",
+          "tags": [
+            "Vue",
+            "Next.js",
+            "TypeScript",
+            "Promo"
+          ],
+          "year": "2024",
+          "type": "Web — промо",
+          "links": [
+            {
+              "type": "web",
+              "url": "https://ministryofsnus.com/#"
+            }
+          ],
+          "details": [
+            "Веб-промо с QR-кодами на упаковке продукта.",
+            "Стек: Vue.js, TypeScript и Next.js.",
+            "Админка на Forest Admin для управления кампанией.",
+            "Короткий цикл от концепта до запуска."
           ]
         },
         {
@@ -803,7 +807,7 @@
       "game": {
         "strengths": [
           "Оптимизация игр — Unity Profiler, управление памятью и пулинг объектов, Addressables, батчинг и снижение draw calls, LOD и атласы текстур, настройка шейдеров и размера сборки",
-          "Чистая архитектура — разделение ответственности, интерфейсы и слабая связанность, пошаговый рефакторинг без поломки контента",
+          "Чистая архитектура ПО — разделение ответственности, интерфейсы и слабая связанность, пошаговый рефакторинг без поломки контента",
           "Разработка кор-механик, шейдеров и инструментов редактора, которые ускоряют продакшн",
           "Разработка проектов от идеи до релиза",
           "Координация команды — 2D/3D-художники и тестеры; документация в Jira/ClickUp и пр."

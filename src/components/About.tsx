@@ -90,13 +90,13 @@ export function About({ mode, content }: AboutProps) {
           >
             {content.heading}
           </h2>
-          {[copy.p1, copy.p2, copy.p3].map((paragraph, i) => (
+          {[copy.p1, copy.p2, copy.p3, copy.p4].filter(Boolean).map((paragraph, i, arr) => (
             <p
               key={i}
               style={{
                 color: "#a0a0b8",
                 lineHeight: 1.8,
-                marginBottom: i < 2 ? 16 : 32,
+                marginBottom: i < arr.length - 1 ? 16 : 32,
                 fontSize: 15,
               }}
             >

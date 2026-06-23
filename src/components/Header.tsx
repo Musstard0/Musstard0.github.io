@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Gamepad2, Menu, MicVocal, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { langLabels, site } from "../config/site";
 import { getAccent, scrollToSection } from "../lib/theme";
 import type { Language, LocaleContent, PortfolioMode } from "../types";
@@ -25,8 +25,8 @@ export function Header({
   mode,
   lang,
   labels,
-  modeSwitcher,
-  onModeChange,
+  // modeSwitcher,
+  // onModeChange,
   onLangChange,
 }: HeaderProps) {
   const accent = getAccent(mode);
@@ -159,6 +159,7 @@ export function Header({
         </div>
       </div>
 
+      {/* Voice mode temporarily disabled — programmer portfolio only
       <div
         style={{
           display: "grid",
@@ -255,6 +256,7 @@ export function Header({
           )}
         </button>
       </div>
+      */}
 
       <AnimatePresence>
         {mobileOpen && (

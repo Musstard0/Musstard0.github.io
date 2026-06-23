@@ -167,17 +167,30 @@ export function Projects({ mode, content }: ProjectsProps) {
                 {sectionLabel}
               </span>
             </div>
-            <h2
-              style={{
-                fontFamily: "var(--font-display)",
-                fontSize: "clamp(26px, 3vw, 40px)",
-                fontWeight: 800,
-                letterSpacing: "-0.02em",
-                margin: 0,
-              }}
-            >
-              {content.heading}
-            </h2>
+            <div style={{ display: "flex", alignItems: "baseline", gap: 12, flexWrap: "wrap" }}>
+              <h2
+                style={{
+                  fontFamily: "var(--font-display)",
+                  fontSize: "clamp(26px, 3vw, 40px)",
+                  fontWeight: 800,
+                  letterSpacing: "-0.02em",
+                  margin: 0,
+                }}
+              >
+                {content.heading}
+              </h2>
+              <span
+                style={{
+                  fontFamily: "var(--font-mono)",
+                  fontSize: 12,
+                  fontWeight: 600,
+                  letterSpacing: "0.08em",
+                  color: "#44445a",
+                }}
+              >
+                {content.period}
+              </span>
+            </div>
           </div>
 
           <div style={{ display: "flex", gap: 8 }}>

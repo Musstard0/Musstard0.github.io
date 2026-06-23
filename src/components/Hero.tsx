@@ -11,7 +11,7 @@ interface HeroProps {
   onModeSwitch: () => void;
 }
 
-export function Hero({ mode, content, onModeSwitch }: HeroProps) {
+export function Hero({ mode, content /* , onModeSwitch */ }: HeroProps) {
   const accent = getAccent(mode);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -254,6 +254,7 @@ export function Hero({ mode, content, onModeSwitch }: HeroProps) {
               >
                 {content.cta}
               </motion.button>
+              {/* Voice mode temporarily disabled
               <button
                 type="button"
                 onClick={onModeSwitch}
@@ -270,6 +271,7 @@ export function Hero({ mode, content, onModeSwitch }: HeroProps) {
               >
                 {content.ctaSub}
               </button>
+              */}
             </div>
           </motion.div>
         </AnimatePresence>

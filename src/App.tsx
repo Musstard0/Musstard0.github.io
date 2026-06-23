@@ -34,7 +34,7 @@ export default function App() {
         onModeChange={setMode}
         onLangChange={setLang}
       />
-      <main style={{ paddingTop: 104 }}>
+      <main style={{ paddingTop: 56 }}>
         <Hero mode={mode} content={t.hero[mode]} onModeSwitch={toggleMode} />
         <About mode={mode} content={t.about} />
         <Projects mode={mode} content={t.projects} />

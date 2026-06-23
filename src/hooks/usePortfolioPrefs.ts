@@ -4,13 +4,13 @@ import type { Language, PortfolioMode } from "../types";
 const MODE_KEY = "portfolio-mode";
 const LANG_KEY = "portfolio-lang";
 
-function safeGetItem(key: string): string | null {
-  try {
-    return localStorage.getItem(key);
-  } catch {
-    return null;
-  }
-}
+// function safeGetItem(key: string): string | null {
+//   try {
+//     return localStorage.getItem(key);
+//   } catch {
+//     return null;
+//   }
+// }
 
 function safeSetItem(key: string, value: string): void {
   try {
@@ -21,13 +21,16 @@ function safeSetItem(key: string, value: string): void {
 }
 
 function readMode(): PortfolioMode {
-  const stored = safeGetItem(MODE_KEY);
-  return stored === "voice" ? "voice" : "game";
+  // Voice mode temporarily disabled — programmer portfolio only
+  // const stored = safeGetItem(MODE_KEY);
+  // return stored === "voice" ? "voice" : "game";
+  return "game";
 }
 
 function readLang(): Language {
-  const stored = safeGetItem(LANG_KEY);
-  if (stored === "ru") return "ru";
+  // English is the default standard language
+  // const stored = safeGetItem(LANG_KEY);
+  // if (stored === "ru") return "ru";
   return "en";
 }
 
@@ -46,7 +49,8 @@ export function usePortfolioPrefs() {
   }, []);
 
   const toggleMode = useCallback(() => {
-    setMode(mode === "game" ? "voice" : "game");
+    // Voice mode temporarily disabled
+    // setMode(mode === "game" ? "voice" : "game");
   }, [mode, setMode]);
 
   return { mode, lang, setMode, setLang, toggleMode };

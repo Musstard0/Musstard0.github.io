@@ -49,6 +49,7 @@ export interface AboutModeContent {
   p1: string;
   p2: string;
   p3: string;
+  p4?: string;
   tag1: string;
   tag2: string;
   tag3: string;
@@ -74,6 +75,7 @@ export interface LocaleContent {
   };
   projects: {
     heading: string;
+    period: string;
     whatIDid: string;
     downloadsLabel: string;
     game: Project[];
