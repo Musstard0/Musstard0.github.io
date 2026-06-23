@@ -5,12 +5,12 @@ export const site = {
   url: "https://musstard0.github.io/",
   contact: {
     email: "denis.botanov1@gmail.com",
-    telegram: "@DanBot01",
-    telegramUrl: "https://t.me/DanBot01",
+    telegram: "@DanRus01",
+    telegramUrl: "https://t.me/DanRus01",
   },
   social: {
     github: "https://github.com/Musstard0",
-    youtube: "",
+    youtube: "https://www.youtube.com/@The_HardReset",
   },
 } as const;
 
