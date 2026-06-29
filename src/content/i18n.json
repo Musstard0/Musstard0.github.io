@@ -13,7 +13,7 @@
     "hero": {
       "game": {
         "greeting": "Hello, I'm",
-        "name": "Denis Rusin",
+        "name": "Denis Botanov",
         "role": "Unity Developer",
         "tagline": "C# and Unity across mobile, PC, and web platforms.",
         "sub": "Software architecture, optimization, and game porting. From idea to store release.",
@@ -22,7 +22,7 @@
       },
       "voice": {
         "greeting": "Hello, I'm",
-        "name": "Denis Rusin",
+        "name": "Denis Botanov",
         "role": "Voice Actor",
         "tagline": "Giving characters depth in two languages.",
         "sub": "Native Russian and fluent English (C1). Available for game characters, narration, commercial VO, and remote sessions.",
@@ -43,7 +43,7 @@
         "tag4": "Documentation"
       },
       "voice": {
-        "p1": "Voice actor working in games and multimedia under the name Denis Rusin. Native Russian with fluent English (C1).",
+        "p1": "Voice actor working in games and multimedia under the name Denis Botanov. Native Russian with fluent English (C1).",
         "p2": "Experienced with remote direction, multiple character voices, and fast turnaround from a treated home studio.",
         "p3": "Available for character work, narration, e-learning, commercial VO, and dubbing. Contact me for reel and samples.",
         "tag1": "EN / RU Bilingual",
@@ -421,7 +421,7 @@
       "telegram": "@DanRus01"
     },
     "footer": {
-      "rights": "© 2026 Denis Rusin. All rights reserved.",
+      "rights": "© 2026 Denis Botanov. All rights reserved.",
       "madeWith": "Designed & coded with care."
     }
   },
@@ -439,7 +439,7 @@
     "hero": {
       "game": {
         "greeting": "Привет, я",
-        "name": "Денис Русин",
+        "name": "Денис Ботанов",
         "role": "Unity-разработчик",
         "tagline": "C# и Unity на мобильных, PC и web платформах.",
         "sub": "Архитектура ПО, оптимизация и портирование игр. Разработка от идеи до релиза в стор.",
@@ -448,7 +448,7 @@
       },
       "voice": {
         "greeting": "Привет, я",
-        "name": "Денис Русин",
+        "name": "Денис Ботанов",
         "role": "Актёр озвучки",
         "tagline": "Даю персонажам глубину на двух языках.",
         "sub": "Родной русский и свободный английский (C1). Персонажи, нарратив, коммерческий VO и удалённые сессии.",
@@ -847,7 +847,7 @@
       "telegram": "@DanRus01"
     },
     "footer": {
-      "rights": "© 2026 Денис Русин. Все права защищены.",
+      "rights": "© 2026 Денис Ботанов. Все права защищены.",
       "madeWith": "Разработано с душой."
     }
   }

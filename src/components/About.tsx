@@ -42,7 +42,7 @@ export function About({ mode, content }: AboutProps) {
           >
             <img
               src={imageSrc}
-              alt={mode === "game" ? "Denis Rusin" : "Voice recording setup"}
+              alt={mode === "game" ? "Denis Botanov" : "Voice recording setup"}
               style={{
                 width: "100%",
                 height: "100%",

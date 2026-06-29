@@ -1,5 +1,5 @@
 export const site = {
-  name: "Denis Rusin",
+  name: "Denis Botanov",
   initials: "DR",
   year: 2026,
   url: "https://musstard0.github.io/",
